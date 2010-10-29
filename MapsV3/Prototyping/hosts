@@ -1,0 +1,57 @@
+# Copyright (c) 1993-2009 Microsoft Corp.
+#
+# This is a sample HOSTS file used by Microsoft TCP/IP for Windows.
+#
+# This file contains the mappings of IP addresses to host names. Each
+# entry should be kept on an individual line. The IP address should
+# be placed in the first column followed by the corresponding host name.
+# The IP address and the host name should be separated by at least one
+# space.
+#
+# Additionally, comments (such as these) may be inserted on individual
+# lines or following the machine name denoted by a '#' symbol.
+#
+# For example:
+#
+#      102.54.94.97     rhino.acme.com          # source server
+#       38.25.63.10     x.acme.com              # x client host
+
+# localhost name resolution is handled within DNS itself.
+#	127.0.0.1       localhost
+#	::1             localhost
+10.116.0.51        map.xo.gr
+10.116.0.51        www.xo.gr
+10.116.0.51        ld.xo.gr
+10.116.0.51        condor01
+10.116.0.51        condor01.headquarters.gr
+10.116.0.51        condor01.xo.gr
+10.116.0.51        m.xo.gr
+10.116.0.51        vf.yellownet.gr
+10.116.0.51        iphone.xo.gr 
+10.116.0.51        vf.xo.gr 
+10.116.0.51        mc.xo.gr
+10.116.0.51        vf.yellownet.gr
+10.116.0.51        wd.xo.gr
+10.116.0.51        m.yellownet.gr
+10.115.0.51        eagle
+10.116.0.51        mdev.yellownet.gr
+10.116.0.51        vf.xo.gr
+10.116.0.51        vf.yellownet.gr
+10.116.0.51        wap.xo.gr
+10.116.0.51        www.beta.xo.gr
+10.116.0.51        www.yellownet.gr
+10.116.0.51        xml.yellownet.gr
+10.116.0.51        map.xo.gr
+10.116.0.51        xo.gr
+10.116.0.51        ww4.xo.gr
+10.116.0.51        ww3.xo.gr
+10.116.0.51        ww6.xo.gr
+10.116.0.72        bm.xo.gr
+10.116.0.230      ibis02.headquarters.gr
+10.116.0.51        mt0.xo.gr
+10.116.0.51        mt1.xo.gr
+10.116.0.51        mt2.xo.gr
+10.116.0.51        mt3.xo.gr
+10.116.0.168       robin
+10.116.0.169       atcomfs
+10.116.0.51        terra3.xo.gr
