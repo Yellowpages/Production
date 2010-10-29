@@ -1,0 +1,100 @@
+/* = Framework
+-----------------------------------------------------------------------------*/
+#wrapper {
+	width:958px;
+	text-align:left;
+	margin:0 auto;
+	background:url(../Media/layout/mainbg01.jpg) repeat-x left 30px;
+	padding:6px 0 0 0;
+	overflow:hidden;
+	}
+	
+#header {
+	width:100%;
+	float:left;
+	background:url(../Media/layout/mainbg02.gif) no-repeat right 24px;
+	padding:0 0 24px 0;
+	}
+	
+#content {
+	width:100%;
+	float:left;
+	}
+	
+#main-content {
+	background:#fff url(../Media/layout/main-content.gif) no-repeat left bottom;
+	float:left;
+	width:100%;
+	padding:0 0 10px 0;
+	}
+
+#content .top-bg {
+	background:#fff url(../Media/layout/main-content2.gif) no-repeat left top;
+	padding:46px 0 10px 0;
+	}	
+
+	
+#left-column01 {
+	float:left;
+	width:721px;
+	}
+	
+#left-column02 {
+	float:left;
+	width:367px;
+	}
+
+#left-column02new {
+	float:left;
+	width:367px;
+	overflow:hidden;
+	height:600px;
+	margin:20px 0 0 0;
+	position:relative;
+}
+	
+#right-column01 {
+	float:right;
+	width:176px;
+	padding:22px 0 0 0;
+	}
+		
+#right-column02 {
+	float:right;
+	width:530px;
+	padding:22px 0 0 0;
+	}
+	
+#upper {
+	width:905px;
+	padding:0 0 17px 28px !important;
+	padding:0 0 0 28px;
+	background:url(../Media/layout/search-footer.png) no-repeat 28px bottom !important;
+	background:none;
+	float:left;
+	}
+	
+#lower {
+	width:897px;
+	padding:6px 0 24px 31px;
+	float:left;
+	}
+
+#lowerpopup {
+	width:816px;
+	padding:0px 0 24px 21px;
+	float:left;
+	}	
+.inner #lower {
+	width:902px;
+	}
+	
+#footer {
+	margin:0 0 0 26px;
+	padding:28px 0 12px 97px;
+	float:left;
+	width:800px;
+	background:url(../Media/layout/footer-bg.gif) no-repeat left top;
+	display:inline; /* fix for IE6 */
+	font-family: Tahoma;
+	}

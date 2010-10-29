@@ -1,0 +1,462 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ED1AA63F-A936-425D-AD25-02CD2617F972}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MapsV2_TileTest</RootNamespace>
+    <AssemblyName>MapsV2_TileTest</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="resources\cursors\grab.cur" />
+    <Content Include="resources\cursors\grabbing.cur" />
+    <Content Include="resources\formating.css" />
+    <Content Include="resources\images\7.png" />
+    <Content Include="resources\images\balloon_300x150_3.png" />
+    <Content Include="resources\images\balloon_300x300_2.png" />
+    <Content Include="resources\images\balloon_300x300_2_old.png" />
+    <Content Include="resources\images\balloon_400x300_2.png" />
+    <Content Include="resources\images\big.png" />
+    <Content Include="resources\images\bigOLD.png" />
+    <Content Include="resources\images\callbackActivityIndicator.gif" />
+    <Content Include="resources\images\Callout1.png" />
+    <Content Include="resources\images\Callout2.png" />
+    <Content Include="resources\images\close_grey.gif" />
+    <Content Include="resources\images\close_grey.png" />
+    <Content Include="resources\images\close_greyold.gif" />
+    <Content Include="resources\images\close_grey_old.gif" />
+    <Content Include="resources\images\demoPoints.jpg" />
+    <Content Include="resources\images\drive.png" />
+    <Content Include="resources\images\images\7.png" />
+    <Content Include="resources\images\images\balloon_300x150_3.png" />
+    <Content Include="resources\images\images\balloon_300x300_2.png" />
+    <Content Include="resources\images\images\balloon_400x300_2.png" />
+    <Content Include="resources\images\images\callbackActivityIndicator.gif" />
+    <Content Include="resources\images\images\close_grey.gif" />
+    <Content Include="resources\images\images\NaviPoint.png" />
+    <Content Include="resources\images\images\NaviPointBlanc.png" />
+    <Content Include="resources\images\images\pin.png" />
+    <Content Include="resources\images\images\png\1.png" />
+    <Content Include="resources\images\images\png\10.png" />
+    <Content Include="resources\images\images\png\1_2.png" />
+    <Content Include="resources\images\images\png\2.png" />
+    <Content Include="resources\images\images\png\3.png" />
+    <Content Include="resources\images\images\png\4.png" />
+    <Content Include="resources\images\images\png\5.png" />
+    <Content Include="resources\images\images\png\6.png" />
+    <Content Include="resources\images\images\png\8.png" />
+    <Content Include="resources\images\images\png\9.png" />
+    <Content Include="resources\images\images\png\recenter.png" />
+    <Content Include="resources\images\images\png\redMark.png" />
+    <Content Include="resources\images\images\redMark.png" />
+    <Content Include="resources\images\images\redMarkj.png" />
+    <Content Include="resources\images\images\ZoomControl2\controller_down.png" />
+    <Content Include="resources\images\images\ZoomControl2\controller_left.png" />
+    <Content Include="resources\images\images\ZoomControl2\controller_right.png" />
+    <Content Include="resources\images\images\ZoomControl2\controller_up.png" />
+    <Content Include="resources\images\images\ZoomControl2\indicator.png" />
+    <Content Include="resources\images\images\ZoomControl2\minus.png" />
+    <Content Include="resources\images\images\ZoomControl2\plus.png" />
+    <Content Include="resources\images\images\ZoomControl2\step.png" />
+    <Content Include="resources\images\images\ZoomControl2\zoomIn.png" />
+    <Content Include="resources\images\images\ZoomControl2\zoomOut.png" />
+    <Content Include="resources\images\images\ZoomControl\arrowMap.png" />
+    <Content Include="resources\images\images\ZoomControl\arrowNew.png" />
+    <Content Include="resources\images\images\ZoomControl\down.png" />
+    <Content Include="resources\images\images\ZoomControl\indicator.png" />
+    <Content Include="resources\images\images\ZoomControl\left.png" />
+    <Content Include="resources\images\images\ZoomControl\minus.png" />
+    <Content Include="resources\images\images\ZoomControl\new\arrowMap.png" />
+    <Content Include="resources\images\images\ZoomControl\new\down.png" />
+    <Content Include="resources\images\images\ZoomControl\new\indicator.png" />
+    <Content Include="resources\images\images\ZoomControl\new\left.png" />
+    <Content Include="resources\images\images\ZoomControl\new\minus.png" />
+    <Content Include="resources\images\images\ZoomControl\new\plus.png" />
+    <Content Include="resources\images\images\ZoomControl\new\pluss.png" />
+    <Content Include="resources\images\images\ZoomControl\new\point.png" />
+    <Content Include="resources\images\images\ZoomControl\new\recenter.png" />
+    <Content Include="resources\images\images\ZoomControl\new\right.png" />
+    <Content Include="resources\images\images\ZoomControl\new\up.png" />
+    <Content Include="resources\images\images\ZoomControl\old\arrowMap.png" />
+    <Content Include="resources\images\images\ZoomControl\old\arrowNew.png" />
+    <Content Include="resources\images\images\ZoomControl\old\down.png" />
+    <Content Include="resources\images\images\ZoomControl\old\left.png" />
+    <Content Include="resources\images\images\ZoomControl\old\minus.png" />
+    <Content Include="resources\images\images\ZoomControl\old\pluss.png" />
+    <Content Include="resources\images\images\ZoomControl\old\point.png" />
+    <Content Include="resources\images\images\ZoomControl\old\recenter.png" />
+    <Content Include="resources\images\images\ZoomControl\old\right.png" />
+    <Content Include="resources\images\images\ZoomControl\old\up.png" />
+    <Content Include="resources\images\images\ZoomControl\plus.png" />
+    <Content Include="resources\images\images\ZoomControl\pluss.png" />
+    <Content Include="resources\images\images\ZoomControl\point.png" />
+    <Content Include="resources\images\images\ZoomControl\recenter.png" />
+    <Content Include="resources\images\images\ZoomControl\right.png" />
+    <Content Include="resources\images\images\ZoomControl\up.png" />
+    <Content Include="resources\images\images\zoomIn.png" />
+    <Content Include="resources\images\images\zoomOut.png" />
+    <Content Include="resources\images\NaviPoint.png" />
+    <Content Include="resources\images\NaviPointBlanc.png" />
+    <Content Include="resources\images\pin.png" />
+    <Content Include="resources\images\png\1.png" />
+    <Content Include="resources\images\png\10.png" />
+    <Content Include="resources\images\png\1old.png" />
+    <Content Include="resources\images\png\1_2.png" />
+    <Content Include="resources\images\png\2.png" />
+    <Content Include="resources\images\png\2_old.png" />
+    <Content Include="resources\images\png\3.png" />
+    <Content Include="resources\images\png\4.png" />
+    <Content Include="resources\images\png\5.png" />
+    <Content Include="resources\images\png\6.png" />
+    <Content Include="resources\images\png\8.png" />
+    <Content Include="resources\images\png\9.png" />
+    <Content Include="resources\images\png\PoiPin1.png" />
+    <Content Include="resources\images\png\PoiPin2.png" />
+    <Content Include="resources\images\png\PoiPin2_old.png" />
+    <Content Include="resources\images\png\PoiPin3.png" />
+    <Content Include="resources\images\png\recenter.png" />
+    <Content Include="resources\images\png\redMark.png" />
+    <Content Include="resources\images\png\transBig.png" />
+    <Content Include="resources\images\png\transSm.png" />
+    <Content Include="resources\images\PoiPin1.png" />
+    <Content Include="resources\images\PoiPin2.png" />
+    <Content Include="resources\images\PoiPin2_old.png" />
+    <Content Include="resources\images\PoiPin3.png" />
+    <Content Include="resources\images\PoiPin3_old.png" />
+    <Content Include="resources\images\PoiPinStroke1.png" />
+    <Content Include="resources\images\PoiPinStroke2.png" />
+    <Content Include="resources\images\PoiPinStroke2_old.png" />
+    <Content Include="resources\images\PoiPinStroke3.png" />
+    <Content Include="resources\images\PoiPinStroke3_old.png" />
+    <Content Include="resources\images\print.gif" />
+    <Content Include="resources\images\redMark.gif" />
+    <Content Include="resources\images\redMark.png" />
+    <Content Include="resources\images\sm.png" />
+    <Content Include="resources\images\smOLD.png" />
+    <Content Include="resources\images\Terra.png" />
+    <Content Include="resources\images\ZoomControl2\controller_down.png" />
+    <Content Include="resources\images\ZoomControl2\controller_left.png" />
+    <Content Include="resources\images\ZoomControl2\controller_right.png" />
+    <Content Include="resources\images\ZoomControl2\controller_up.png" />
+    <Content Include="resources\images\ZoomControl2\indicator.png" />
+    <Content Include="resources\images\ZoomControl2\indicatorr.png" />
+    <Content Include="resources\images\ZoomControl2\minus.png" />
+    <Content Include="resources\images\ZoomControl2\old\controller_down.png" />
+    <Content Include="resources\images\ZoomControl2\old\controller_left.png" />
+    <Content Include="resources\images\ZoomControl2\old\controller_right.png" />
+    <Content Include="resources\images\ZoomControl2\old\controller_up.png" />
+    <Content Include="resources\images\ZoomControl2\old\indicator.png" />
+    <Content Include="resources\images\ZoomControl2\old\minus.png" />
+    <Content Include="resources\images\ZoomControl2\old\plus.png" />
+    <Content Include="resources\images\ZoomControl2\old\step.png" />
+    <Content Include="resources\images\ZoomControl2\old\zoomIn.png" />
+    <Content Include="resources\images\ZoomControl2\old\zoomOut.png" />
+    <Content Include="resources\images\ZoomControl2\plus.png" />
+    <Content Include="resources\images\ZoomControl2\pluss.png" />
+    <Content Include="resources\images\ZoomControl2\recenter.png" />
+    <Content Include="resources\images\ZoomControl2\step.png" />
+    <Content Include="resources\images\ZoomControl2\stepold.png" />
+    <Content Include="resources\images\ZoomControl2\zoomIn.png" />
+    <Content Include="resources\images\ZoomControl2\zoomOut.png" />
+    <Content Include="resources\images\ZoomControlHorizontal\arrowNew.png" />
+    <Content Include="resources\images\ZoomControlHorizontal\controller_down.png" />
+    <Content Include="resources\images\ZoomControlHorizontal\controller_left.png" />
+    <Content Include="resources\images\ZoomControlHorizontal\controller_right.png" />
+    <Content Include="resources\images\ZoomControlHorizontal\controller_up.png" />
+    <Content Include="resources\images\ZoomControlHorizontal\indicator.png" />
+    <Content Include="resources\images\ZoomControlHorizontal\indicator111.png" />
+    <Content Include="resources\images\ZoomControlHorizontal\minus.png" />
+    <Content Include="resources\images\ZoomControlHorizontal\old\arrowMap.png" />
+    <Content Include="resources\images\ZoomControlHorizontal\old\arrowNew.png" />
+    <Content Include="resources\images\ZoomControlHorizontal\old\down.png" />
+    <Content Include="resources\images\ZoomControlHorizontal\old\left.png" />
+    <Content Include="resources\images\ZoomControlHorizontal\old\minus.png" />
+    <Content Include="resources\images\ZoomControlHorizontal\old\pluss.png" />
+    <Content Include="resources\images\ZoomControlHorizontal\old\point.png" />
+    <Content Include="resources\images\ZoomControlHorizontal\old\recenter.png" />
+    <Content Include="resources\images\ZoomControlHorizontal\old\right.png" />
+    <Content Include="resources\images\ZoomControlHorizontal\old\up.png" />
+    <Content Include="resources\images\ZoomControlHorizontal\plus.png" />
+    <Content Include="resources\images\ZoomControlHorizontal\pluss.png" />
+    <Content Include="resources\images\ZoomControlHorizontal\recenter.png" />
+    <Content Include="resources\images\ZoomControlHorizontal\step.png" />
+    <Content Include="resources\images\ZoomControlVertical\controller_down.png" />
+    <Content Include="resources\images\ZoomControlVertical\controller_left.png" />
+    <Content Include="resources\images\ZoomControlVertical\controller_right.png" />
+    <Content Include="resources\images\ZoomControlVertical\controller_up.png" />
+    <Content Include="resources\images\ZoomControlVertical\indicator.png" />
+    <Content Include="resources\images\ZoomControlVertical\indicatorr.png" />
+    <Content Include="resources\images\ZoomControlVertical\minus.png" />
+    <Content Include="resources\images\ZoomControlVertical\old\controller_down.png" />
+    <Content Include="resources\images\ZoomControlVertical\old\controller_left.png" />
+    <Content Include="resources\images\ZoomControlVertical\old\controller_right.png" />
+    <Content Include="resources\images\ZoomControlVertical\old\controller_up.png" />
+    <Content Include="resources\images\ZoomControlVertical\old\indicator.png" />
+    <Content Include="resources\images\ZoomControlVertical\old\minus.png" />
+    <Content Include="resources\images\ZoomControlVertical\old\plus.png" />
+    <Content Include="resources\images\ZoomControlVertical\old\step.png" />
+    <Content Include="resources\images\ZoomControlVertical\old\zoomIn.png" />
+    <Content Include="resources\images\ZoomControlVertical\old\zoomOut.png" />
+    <Content Include="resources\images\ZoomControlVertical\plus.png" />
+    <Content Include="resources\images\ZoomControlVertical\pluss.png" />
+    <Content Include="resources\images\ZoomControlVertical\recenter.png" />
+    <Content Include="resources\images\ZoomControlVertical\step.png" />
+    <Content Include="resources\images\ZoomControlVertical\stepold.png" />
+    <Content Include="resources\images\ZoomControlVertical\zoomIn.png" />
+    <Content Include="resources\images\ZoomControlVertical\zoomOut.png" />
+    <Content Include="resources\images\ZoomControl\arrowMap.png" />
+    <Content Include="resources\images\ZoomControl\arrowNew.png" />
+    <Content Include="resources\images\ZoomControl\down.png" />
+    <Content Include="resources\images\ZoomControl\indicator.png" />
+    <Content Include="resources\images\ZoomControl\left.png" />
+    <Content Include="resources\images\ZoomControl\minus.png" />
+    <Content Include="resources\images\ZoomControl\old\arrowMap.png" />
+    <Content Include="resources\images\ZoomControl\old\arrowNew.png" />
+    <Content Include="resources\images\ZoomControl\old\down.png" />
+    <Content Include="resources\images\ZoomControl\old\left.png" />
+    <Content Include="resources\images\ZoomControl\old\minus.png" />
+    <Content Include="resources\images\ZoomControl\old\pluss.png" />
+    <Content Include="resources\images\ZoomControl\old\point.png" />
+    <Content Include="resources\images\ZoomControl\old\recenter.png" />
+    <Content Include="resources\images\ZoomControl\old\right.png" />
+    <Content Include="resources\images\ZoomControl\old\up.png" />
+    <Content Include="resources\images\ZoomControl\plus.png" />
+    <Content Include="resources\images\ZoomControl\pluss.png" />
+    <Content Include="resources\images\ZoomControl\point.png" />
+    <Content Include="resources\images\ZoomControl\recenter.png" />
+    <Content Include="resources\images\ZoomControl\right.png" />
+    <Content Include="resources\images\ZoomControl\up.png" />
+    <Content Include="resources\images\zoomIn.png" />
+    <Content Include="resources\images\zoomOut.png" />
+    <Content Include="resources\js\browserdetect_lite.js" />
+    <Content Include="resources\js\CacheParamsOb.js" />
+    <Content Include="resources\js\Copy of PoiPinParams.js" />
+    <Content Include="resources\js\excanvas-compressed.js" />
+    <Content Include="resources\js\excanvas.js" />
+    <Content Include="resources\js\jquery-1.2.2.pack.js" />
+    <Content Include="resources\js\jquery-1.3.2.min.js" />
+    <Content Include="resources\js\jQuery_mousewheel_plugin.js" />
+    <Content Include="resources\js\MapOb.js" />
+    <Content Include="resources\js\MapOb2.js" />
+    <Content Include="resources\js\MapOb2009.js" />
+    <Content Include="resources\js\MapOb_last.js" />
+    <Content Include="resources\js\MapOb_last2.js" />
+    <Content Include="resources\js\MapOb_last3.js" />
+    <Content Include="resources\js\MapOb_last4.js" />
+    <Content Include="resources\js\MapOb_old.js" />
+    <Content Include="resources\js\myMapsPoiPinParams.js" />
+    <Content Include="resources\js\opacity.js" />
+    <Content Include="resources\js\OpacityOb.js" />
+    <Content Include="resources\js\PoiPinParams.js" />
+    <Content Include="resources\js_old\browserdetect_lite.js" />
+    <Content Include="resources\js_old\CacheParamsOb.js" />
+    <Content Include="resources\js_old\Copy of PoiPinParams.js" />
+    <Content Include="resources\js_old\excanvas-compressed.js" />
+    <Content Include="resources\js_old\excanvas.js" />
+    <Content Include="resources\js_old\jquery-1.2.2.pack.js" />
+    <Content Include="resources\js_old\jQuery_mousewheel_plugin.js" />
+    <Content Include="resources\js_old\MapOb.js" />
+    <Content Include="resources\js_old\MapOb2.js" />
+    <Content Include="resources\js_old\MapOb2009.js" />
+    <Content Include="resources\js_old\MapOb_last.js" />
+    <Content Include="resources\js_old\MapOb_last2.js" />
+    <Content Include="resources\js_old\MapOb_last3.js" />
+    <Content Include="resources\js_old\MapOb_last4.js" />
+    <Content Include="resources\js_old\MapOb_old.js" />
+    <Content Include="resources\js_old\myMapsPoiPinParams.js" />
+    <Content Include="resources\js_old\opacity.js" />
+    <Content Include="resources\js_old\OpacityOb.js" />
+    <Content Include="resources\js_old\PoiPinParams.js" />
+    <Content Include="resources\modules.css" />
+    <Content Include="resources\structure.css" />
+    <Content Include="resources\styles.css" />
+    <Content Include="resources\StyleSheet2.css" />
+    <Content Include="resources\StyleSheet2Print.css" />
+    <Content Include="resources\StyleSheet2Print_last1.css" />
+    <Content Include="resources\StyleSheet2Print_last2.css" />
+    <Content Include="resources\StyleSheet2Print_new.css" />
+    <Content Include="resources\StyleSheet2_last.css" />
+    <Content Include="resources\StyleSheet2_last10.css" />
+    <Content Include="resources\StyleSheet2_last12.css" />
+    <Content Include="resources\StyleSheet2_last13.css" />
+    <Content Include="resources\StyleSheet2_last2.css" />
+    <Content Include="resources\StyleSheet2_last3.css" />
+    <Content Include="resources\StyleSheet2_last4.css" />
+    <Content Include="resources\StyleSheet2_last5.css" />
+    <Content Include="resources\StyleSheet2_last6.css" />
+    <Content Include="resources\StyleSheet2_last7.css" />
+    <Content Include="resources\StyleSheet2_last8.css" />
+    <Content Include="resources\StyleSheet2_last9.css" />
+    <Content Include="resources\StyleSheet2_new.css" />
+    <Content Include="resources\StyleSheet2_new_last.css" />
+    <Content Include="resources\styles\StyleSheet.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resources\images\images\png\Thumbs.db" />
+    <None Include="resources\images\images\Thumbs.db" />
+    <None Include="resources\images\images\ZoomControl2\Thumbs.db" />
+    <None Include="resources\images\images\ZoomControl\Thumbs.db" />
+    <None Include="resources\images\images\ZoomControl\ZoomPanControl.rar" />
+    <None Include="resources\images\png\Thumbs.db" />
+    <None Include="resources\images\Thumbs.db" />
+    <None Include="resources\images\ZoomControl2\Thumbs.db" />
+    <None Include="resources\images\ZoomControlHorizontal\old\Thumbs.db" />
+    <None Include="resources\images\ZoomControlHorizontal\Thumbs.db" />
+    <None Include="resources\images\ZoomControlHorizontal\ZoomPanControl.rar" />
+    <None Include="resources\images\ZoomControlVertical\old\Thumbs.db" />
+    <None Include="resources\images\ZoomControlVertical\Thumbs.db" />
+    <None Include="resources\images\ZoomControl\old\Thumbs.db" />
+    <None Include="resources\images\ZoomControl\Thumbs.db" />
+    <None Include="resources\images\ZoomControl\ZoomPanControl.rar" />
+    <None Include="resources\js\MapOb.js-ls" />
+    <None Include="resources\js\MapOb.js-ns" />
+    <None Include="resources\js\MapOb.js-s" />
+    <None Include="resources\js\MapOb.rar" />
+    <None Include="resources\js_old\MapOb.js-ls" />
+    <None Include="resources\js_old\MapOb.js-ns" />
+    <None Include="resources\js_old\MapOb.js-s" />
+    <None Include="resources\js_old\MapOb.rar" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="resources\images\images\.svn\prop-base\" />
+    <Folder Include="resources\images\images\.svn\props\" />
+    <Folder Include="resources\images\images\.svn\text-base\" />
+    <Folder Include="resources\images\images\.svn\tmp\prop-base\" />
+    <Folder Include="resources\images\images\.svn\tmp\props\" />
+    <Folder Include="resources\images\images\.svn\tmp\text-base\" />
+    <Folder Include="resources\images\images\png\.svn\prop-base\" />
+    <Folder Include="resources\images\images\png\.svn\props\" />
+    <Folder Include="resources\images\images\png\.svn\text-base\" />
+    <Folder Include="resources\images\images\png\.svn\tmp\prop-base\" />
+    <Folder Include="resources\images\images\png\.svn\tmp\props\" />
+    <Folder Include="resources\images\images\png\.svn\tmp\text-base\" />
+    <Folder Include="resources\images\images\ZoomControl2\.svn\prop-base\" />
+    <Folder Include="resources\images\images\ZoomControl2\.svn\props\" />
+    <Folder Include="resources\images\images\ZoomControl2\.svn\text-base\" />
+    <Folder Include="resources\images\images\ZoomControl2\.svn\tmp\prop-base\" />
+    <Folder Include="resources\images\images\ZoomControl2\.svn\tmp\props\" />
+    <Folder Include="resources\images\images\ZoomControl2\.svn\tmp\text-base\" />
+    <Folder Include="resources\images\images\ZoomControl\.svn\prop-base\" />
+    <Folder Include="resources\images\images\ZoomControl\.svn\props\" />
+    <Folder Include="resources\images\images\ZoomControl\.svn\text-base\" />
+    <Folder Include="resources\images\images\ZoomControl\.svn\tmp\prop-base\" />
+    <Folder Include="resources\images\images\ZoomControl\.svn\tmp\props\" />
+    <Folder Include="resources\images\images\ZoomControl\.svn\tmp\text-base\" />
+    <Folder Include="resources\images\png\.svn\prop-base\" />
+    <Folder Include="resources\images\png\.svn\props\" />
+    <Folder Include="resources\images\png\.svn\text-base\" />
+    <Folder Include="resources\images\png\.svn\tmp\prop-base\" />
+    <Folder Include="resources\images\png\.svn\tmp\props\" />
+    <Folder Include="resources\images\png\.svn\tmp\text-base\" />
+    <Folder Include="resources\images\ZoomControl2\.svn\prop-base\" />
+    <Folder Include="resources\images\ZoomControl2\.svn\props\" />
+    <Folder Include="resources\images\ZoomControl2\.svn\text-base\" />
+    <Folder Include="resources\images\ZoomControl2\.svn\tmp\prop-base\" />
+    <Folder Include="resources\images\ZoomControl2\.svn\tmp\props\" />
+    <Folder Include="resources\images\ZoomControl2\.svn\tmp\text-base\" />
+    <Folder Include="resources\images\ZoomControlHorizontal\.svn\prop-base\" />
+    <Folder Include="resources\images\ZoomControlHorizontal\.svn\props\" />
+    <Folder Include="resources\images\ZoomControlHorizontal\.svn\text-base\" />
+    <Folder Include="resources\images\ZoomControlHorizontal\.svn\tmp\prop-base\" />
+    <Folder Include="resources\images\ZoomControlHorizontal\.svn\tmp\props\" />
+    <Folder Include="resources\images\ZoomControlHorizontal\.svn\tmp\text-base\" />
+    <Folder Include="resources\images\ZoomControlVertical\.svn\prop-base\" />
+    <Folder Include="resources\images\ZoomControlVertical\.svn\props\" />
+    <Folder Include="resources\images\ZoomControlVertical\.svn\text-base\" />
+    <Folder Include="resources\images\ZoomControlVertical\.svn\tmp\prop-base\" />
+    <Folder Include="resources\images\ZoomControlVertical\.svn\tmp\props\" />
+    <Folder Include="resources\images\ZoomControlVertical\.svn\tmp\text-base\" />
+    <Folder Include="resources\images\ZoomControl\.svn\prop-base\" />
+    <Folder Include="resources\images\ZoomControl\.svn\props\" />
+    <Folder Include="resources\images\ZoomControl\.svn\text-base\" />
+    <Folder Include="resources\images\ZoomControl\.svn\tmp\prop-base\" />
+    <Folder Include="resources\images\ZoomControl\.svn\tmp\props\" />
+    <Folder Include="resources\images\ZoomControl\.svn\tmp\text-base\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1331</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

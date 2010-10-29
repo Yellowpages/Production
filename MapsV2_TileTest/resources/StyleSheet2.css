@@ -1,0 +1,481 @@
+﻿
+#steps{
+	overflow: auto; 
+	width:520px; 
+	height:150px;
+	margin-left:-20px;}
+	
+	
+	
+
+
+body{
+	background:#fff;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:xx-small;
+	margin:0px;
+	margin-left:10px;
+
+	font-size:10px;
+}
+
+
+a, a:link, a:visited, a:active
+	{color:#0063a7;
+	text-decoration:none;}
+
+a:hover
+	{color:#0063a7;
+	text-decoration:underline;}
+	
+	
+#print{
+	margin-top:5px;
+	float:right;
+	width:800px;
+	text-align:right;
+	height:40px;
+	vertical-align: top;
+	padding-top:3px;
+	color:#8daec4;
+	padding-bottom:5px;	
+	font : normal xx-small Verdana, Arial, Helvetica, sans-serif;
+
+	}
+
+#printProx{
+	margin-top:0px;
+	float:right;
+	width:800px;
+	text-align:right;
+	height:20px;
+	vertical-align: top;
+	padding-top:0px;
+	color:#8daec4;
+	padding-bottom:5px;	
+	font : normal xx-small Verdana, Arial, Helvetica, sans-serif;
+
+	}
+	
+
+.work{
+	font-size:11px;
+	color:#000000;
+	text-align:center;
+	vertical-align:top;
+	width:50px;
+	font-weight:bold;
+}
+	
+#new{
+	width:500px;
+	text-align:left;
+	float:left;
+}
+
+.titlesC
+{	border:1px solid #c6d6e6;
+width:500px;
+left:0px;
+}
+	
+	
+.titles{	
+	font-size:12px;
+	color:#0063a7;
+	border-top:0px none;
+	text-align:left;
+	padding-bottom:8px;
+	margin-bottom:10px;
+	font-weight:bold;
+	margin-top:5px;
+	vertical-align:top;
+	padding-top:5px;
+	}
+	
+	
+	
+.dist{	
+	font-size:12px;
+	color:#ff0000;
+text-align:center;
+	padding-bottom:8px;
+	margin-bottom:10px;
+	font-weight:bold;
+	vertical-align:top;
+	padding-left:5px;
+
+	}
+	
+.dist2{	
+	font-size:11px;
+	vertical-align:top;
+	padding-bottom:8px;
+	margin-bottom:10px;
+	font-weight:bold;
+
+	}
+	
+
+	
+
+#map{
+	float:left;
+	text-align:center;
+	margin-top:0px;
+
+	
+
+	}
+	
+.name{
+border-top:0px none;
+	color:#000;
+	font : normal 11px Verdana, Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	text-align:left;
+	width:329px;
+
+}
+.name1{	
+border-top:0px none;
+	color:#000;
+	font : normal 11px Verdana, Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	text-align:left;
+	width:120px;}
+	
+.name0{
+border-top:0px none;
+	color:#000;
+	font : normal 11px Verdana, Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	text-align:left;
+	width:48px;}
+	
+.table1{
+	color:#7d7d7d;
+	width:100%;
+	margin-left:12px;
+	left:0px;
+	margin-top:-20px;
+	}
+	
+.table2{
+	border-bottom:1px solid #ebebeb;
+	padding:3px;
+	color:#000;	
+
+	}
+	
+.met{
+	border-bottom:1px solid #ebebeb;
+	padding:3px;
+	width:100px;
+		color:#000;
+	}
+
+.table2_hover{
+	border-bottom:1px solid #ebebeb;
+	padding:3px;}
+	
+#CalloutDivInfote1
+{
+      position:absolute;
+      overflow:auto;
+      left:20px;
+      top:20px;
+      width:180px;
+      height:90px;
+      z-index:16;
+	  cursor:text;
+}
+
+#CalloutDivInfote1Close
+
+{
+      position:absolute;
+      width:14px;
+      height:14px;
+      z-index:17;
+     cursor:pointer;
+}
+
+#CalloutDivInfote2Close
+
+{
+     position:absolute;
+      width:14px;
+      height:14px;
+      z-index:17;
+      cursor:pointer;
+}
+
+#CalloutDivInfote2
+{
+      position:absolute;
+      overflow:auto;
+      left:30px;
+      top:22px;
+      width:195px;
+      height:126px;
+      z-index:16;
+}
+
+#CalloutDivInfoteMapClose
+
+{
+     position:absolute;
+      width:14px;
+      height:14px;
+      z-index:17;
+      cursor:pointer;
+}
+
+#CalloutDivInfoteMap
+{
+      position:absolute;
+      overflow:auto;
+      width:400px;
+      height:300px;
+      z-index:16;
+}
+
+.PoiPin
+{
+	cursor:pointer;
+}
+
+.Pin
+{
+	cursor:pointer;
+}
+
+.Stroke
+{
+	cursor:pointer;
+}
+
+.address
+{
+	color:#7d7d7d;
+	font : x-small Verdana, Arial, Helvetica, sans-serif;
+	line-height:14px;	
+}
+
+b
+{
+	color:#0063a7;
+	font : bold x-small Verdana, Arial, Helvetica, sans-serif;
+padding-bottom:5px;
+}
+
+p
+{
+
+	font : xx-small Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+#text{
+margin-top:0px;
+z-index:20;
+text-align:left;color:#7d7d7d;
+font : xx-small Verdana, Arial, Helvetica, sans-serif;
+line-height:12px;
+}
+
+hr{
+	color:#9cb7d0;
+	width:90%;
+	height:1px;
+	float:left;
+	text-align:left;
+	margin-top:5px;}
+	
+#MainMap{
+	position:absolute;
+	overflow: hidden;
+	border: 1px solid #999;
+	background-color:#ebebeb;
+	z-index:800;
+	height: 95%;
+	float: left;
+	text-align: right;
+	left:30px;
+	right: 10px;
+	top:33px;
+}
+
+#OverviewMap{
+	position:relative;
+	overflow: hidden;
+	border: 2px solid black;
+	background-color:White;
+	width:100px;
+	height:100px;
+	z-index:1000;
+	right: 10px;
+	left:262px;
+	top:-114px;
+}
+		
+#myZoom{
+	position:relative;
+	margin-bottom:0px;
+	float:left;
+	top:-110px;
+	z-index:100;
+	width: 199px;
+	margin-left: 10px;
+	padding-right:20px;
+}
+
+	
+
+#CalloutDivInfoteSmall
+
+{
+      position:absolute;
+      overflow:auto; 
+      left:10px;
+      top:10px;
+      width:200px;
+      height:120px;
+      z-index:16;
+}
+
+ 
+/*
+#CalloutDivInfoteSmallClose 
+
+{
+      position:absolute;
+      background-image:url(resources/images/close_grey.gif);
+      right:23px;
+      top:12px;
+      width:15px;
+      height:15px;
+	  z-index:17;
+      cursor:pointer;
+
+}
+*/
+
+.MapCalloutTrTop
+{
+	padding-top:10px;
+	padding-left:5px;
+	padding-right:25px;
+	height:40px;
+	vertical-align:top;
+}
+.MapCalloutTr
+{
+	border:1px Red;
+	width:100%;
+	height:182px;	
+}
+.MapCalloutTd
+{
+
+}
+#CallOutMap
+{
+	position:absolute;
+	overflow: hidden;
+	border: 2px solid black;
+	background-color:White;
+	left:5px;
+	top:55px;
+	width:280px;
+	height:180px;
+}
+
+.NaviPoint
+{
+	display:table-cell;
+	text-align:center;
+	vertical-align:middle;
+	
+	color:White;
+	font-weight:bold;
+	font-size:7;
+	line-height: 26px
+}
+
+.PoiNumText
+{
+	position:absolute;
+	left:3px;
+	top:7px;
+	color:White;
+	width:14px;
+	text-align:center;
+	font-weight:bold;
+	font-size:xx-small;
+}
+.PoiIcon
+{
+	position:absolute;
+	left:17px;
+	top:6px;
+	width:16px;
+	height:16px;
+}
+#addressInCallout
+{
+	font-weight:bold;
+	text-align:left;
+	position:absolute;
+	left:10px;
+	width:265px;
+	height:100px;
+
+}
+
+#bottomInCallout
+{
+	font-weight:bold;
+	text-align:left;
+	position:absolute;
+	left:10px;
+	top:240px;
+	width:280px;
+}
+
+#pinDialogPrevRoute
+{
+	cursor:pointer;
+}
+
+#pinDialogNextRoute
+{
+	cursor:pointer;
+}
+
+.naviresult
+{
+	cursor:pointer;
+}
+
+
+#footInfo{
+	display:none;}
+/*
+#CalloutDivInfote1Link
+
+{
+      position:absolute;
+      z-index:17;
+     cursor:pointer;
+}
+
+ 
+
+#CalloutDivInfote2Link{
+     position:absolute;
+     z-index:17;
+    cursor:pointer;
+}
+*/

@@ -1,0 +1,85 @@
+/* ---------- style reset ---------- */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img,
+q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td
+				{ margin: 0; padding: 0; border: 0;
+					font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline
+}:focus			{ outline: 0 }
+body			{ line-height: 1.5em }
+table			{ border-collapse: separate; border-spacing: 0 }
+caption, th, td	{ text-align: left; font-weight: normal }
+table, td, th	{ vertical-align: middle }
+blockquote:before, blockquote:after, q:before, q:after
+				{ content: "" }
+blockquote, q	{ quotes: "" "" }
+button			{ cursor: pointer }
+a img			{ border: none }
+
+/* ---------- default body declarations ---------- */
+body			{ font-size: 69%; font-family: Verdana, Tahoma, Arial, Helvetica, sans-serif; color: #333; text-align:center; }
+
+h1, h2, h3,	h4, h5, h6
+				{ font-weight: normal; line-height: 1.1em; color: #000 }
+h1				{ font-size: 2.1em; margin-bottom: 0.4em }
+h2				{ font-size: 1.7em; margin-bottom: 0.5em }
+h3				{ font-size: 1.3em; margin-bottom: 0.6em }
+h4				{ font-size: 1.2em; margin-bottom: 0.7em }
+h5				{ font-size: 1.1em; margin-bottom: 0.2em }
+h6				{ font-size: 1em; margin-bottom: 0.15em }
+h1 img, h2 img, h3 img, h4 img,	h5 img, h6 img
+				{ margin: 0 }
+p				{ margin: 0 0 1em 0 }
+p img			{ float: left; margin: 1px 10px 5px 0; padding: 0 }
+a				{ text-decoration: underline; color:#006699; }
+a:visited, a:active, a:hover
+				{ text-decoration: underline }
+hr				{ display:none; }
+* html hr		{ margin: 1em 0 }
+*+html hr		{ margin: 1em 0 }
+blockquote		{ margin: 1.5em; color:#666; font-style: italic }
+strong, b		{ font-weight: bold }
+em, dfn			{ font-style: italic; color: #6e6e6e }
+dfn				{ font-weight: bold }
+sup, sub		{ line-height: 0 }
+abbr, acronym	{ border-bottom: 1px dotted #666 }
+address			{ margin: 0 0 1.5em 0; font-style: italic }
+del				{ color: #a3a3a3 }
+ins				{ color: #555 }
+pre, code		{ margin: 1.5em 0; white-space: pre }
+pre, code, tt	{ font: 1em 'Andale Mono', 'Lucida Console', monospace; line-height: 1.5 }
+samp, kbd		{ font: 1em 'Courier New', Courier, monospace }
+li ul			{ margin: 0 1.5em }
+li ol			{ margin: 0 2em }
+ul, ol			{ margin: 0 1.5em 1.5em 1.8em }
+ul				{ list-style-type: disc }
+ol				{ margin-left: 2.5em; list-style-type: decimal }
+dl				{ margin: 0 0 1.5em 0 }
+dl dt			{ font-weight: bold }
+dd				{ margin-left: 1.5em }
+table			{ border-collapse: collapse; margin-bottom: 1em }
+thead td, th	{ /*font-weight: bold*/ }
+thead td		{ border-top: 1px solid #dfdfdf; border-bottom: 1px solid #dfdfdf }
+th, td			{ padding: .3em 10px .3em 5px; vertical-align: top; }
+tr:hover		{ }
+thead tr:hover td, tr:hover th
+				{ }
+tr.even td		{ background-color: #ebebeb }
+tfoot			{ font-style: italic }
+caption			{ margin-bottom: .2em; padding-left: 5px; font-weight: bold; color: #000 }
+input.field		{ border: 1px solid #dedede }
+input, button, select, option, textarea
+				{ font-size: 1em; color: #000 }
+input.button, button
+				{ margin: 1px; cursor: pointer; color: #c4c4c4; /*text-shadow: #333 1px 1px 0;*/ outline: 1px solid #cfcfcf; border: 1px solid #111; background-color: #484747 }
+button:active	{ color: #fff }
+optgroup		{ font-weight: bold; font-style: normal; color: #636363 }
+textarea		{ max-width: 650px }
+.generic-list, .generic-list-default {	list-style:none; font-size:1.1em;	}	
+.generic-list li { padding:3px 0 3px 12px; background:url(../Media/layout/bullet01.gif) no-repeat left 10px; }
+.generic-list-default li { padding:3px 0 3px 12px; background:url(../Media/layout/bullet06.gif) no-repeat left 10px; }
+#content li.force-blue { background:url(../Media/layout/bullet01.gif) no-repeat left 10px; }
+#content li.force-blue2 { background:url(../Media/layout/bullet01.gif) no-repeat left 8px; }
+.hidden { display:none; }
+.visible { display:block; }
+#content .no-bg { background:#fff;}
