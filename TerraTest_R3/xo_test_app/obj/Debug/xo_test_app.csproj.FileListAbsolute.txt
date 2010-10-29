@@ -1,0 +1,28 @@
+C:\projects\xo_test_app\xo_test_app\obj\Debug\ResolveAssemblyReference.cache
+C:\projects\xo_test_app\xo_test_app\obj\Debug\xo_test_app.Form1.resources
+C:\projects\xo_test_app\xo_test_app\obj\Debug\xo_test_app.Properties.Resources.resources
+C:\projects\xo_test_app\xo_test_app\obj\Debug\GenerateResource.read.1.tlog
+C:\projects\xo_test_app\xo_test_app\obj\Debug\GenerateResource.write.1.tlog
+C:\projects\xo_test_app\xo_test_app\bin\Debug\app.config
+C:\projects\xo_test_app\xo_test_app\bin\Debug\xo_test_app.exe.config
+C:\projects\xo_test_app\xo_test_app\bin\Debug\xo_test_app.exe
+C:\projects\xo_test_app\xo_test_app\bin\Debug\xo_test_app.pdb
+C:\projects\xo_test_app\xo_test_app\bin\Debug\TerraJSONClasses.dll
+C:\projects\xo_test_app\xo_test_app\bin\Debug\xo_terra_buffer.dll
+C:\projects\xo_test_app\xo_test_app\bin\Debug\Newtonsoft.Json.dll
+C:\projects\xo_test_app\xo_test_app\bin\Debug\xo_terra_buffer.pdb
+C:\projects\xo_test_app\xo_test_app\bin\Debug\TerraJSONClasses.pdb
+C:\projects\xo_test_app\xo_test_app\bin\Debug\Newtonsoft.Json.pdb
+C:\projects\xo_test_app\xo_test_app\bin\Debug\Newtonsoft.Json.xml
+C:\projects\xo_test_app\xo_test_app\obj\Debug\xo_test_app.exe
+C:\projects\xo_test_app\xo_test_app\obj\Debug\xo_test_app.pdb
+C:\Documents and Settings\palmpanopoulos\My Documents\Visual Studio 2008\Projects\TerraTest_R3\xo_test_app\bin\Debug\xo_test_app.exe.config
+C:\Documents and Settings\palmpanopoulos\My Documents\Visual Studio 2008\Projects\TerraTest_R3\xo_test_app\obj\Debug\xo_test_app.exe
+C:\Documents and Settings\palmpanopoulos\My Documents\Visual Studio 2008\Projects\TerraTest_R3\xo_test_app\obj\Debug\xo_test_app.pdb
+C:\Documents and Settings\palmpanopoulos\My Documents\Visual Studio 2008\Projects\TerraTest_R3\xo_test_app\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\palmpanopoulos\My Documents\Visual Studio 2008\Projects\TerraTest_R3\xo_test_app\obj\Debug\xo_test_app.Form1.resources
+C:\Documents and Settings\palmpanopoulos\My Documents\Visual Studio 2008\Projects\TerraTest_R3\xo_test_app\obj\Debug\xo_test_app.Properties.Resources.resources
+C:\Documents and Settings\palmpanopoulos\My Documents\Visual Studio 2008\Projects\TerraTest_R3\xo_test_app\obj\Debug\xo_test_app.csproj.GenerateResource.Cache
+C:\Documents and Settings\palmpanopoulos\My Documents\Visual Studio 2008\Projects\TerraTest_R3\xo_test_app\bin\Debug\app.config
+C:\Documents and Settings\palmpanopoulos\My Documents\Visual Studio 2008\Projects\TerraTest_R3\xo_test_app\bin\Debug\xo_test_app.exe
+C:\Documents and Settings\palmpanopoulos\My Documents\Visual Studio 2008\Projects\TerraTest_R3\xo_test_app\bin\Debug\xo_test_app.pdb

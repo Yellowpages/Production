@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="txt_linebuffer.Text" xml:space="preserve">
+    <value>[{"geometry":null,"stopName":null,"stopId":null,"x":473708.0,"y":4200651.0},{"geometry":null,"stopName":null,"stopId":null,"x":473708.0,"y":4200651.0},{"geometry":null,"stopName":null,"stopId":null,"x":473708.0,"y":4200651.0},{"geometry":null,"stopName":null,"stopId":null,"x":473684.0,"y":4200679.0},{"geometry":null,"stopName":null,"stopId":null,"x":473684.0,"y":4200679.0},{"geometry":null,"stopName":null,"stopId":null,"x":473682.0,"y":4200681.0},{"geometry":null,"stopName":null,"stopId":null,"x":473682.0,"y":4200681.0},{"geometry":null,"stopName":null,"stopId":null,"x":473769.0,"y":4200756.0},{"geometry":null,"stopName":null,"stopId":null,"x":473854.0,"y":4200828.0},{"geometry":null,"stopName":null,"stopId":null,"x":473882.0,"y":4200852.0},{"geometry":null,"stopName":null,"stopId":null,"x":473941.0,"y":4200903.0},{"geometry":null,"stopName":null,"stopId":null,"x":473999.0,"y":4200953.0},{"geometry":null,"stopName":null,"stopId":null,"x":474025.0,"y":4200975.0},{"geometry":null,"stopName":null,"stopId":null,"x":474111.0,"y":4201050.0},{"geometry":null,"stopName":null,"stopId":null,"x":474196.0,"y":4201122.0},{"geometry":null,"stopName":null,"stopId":null,"x":474201.0,"y":4201126.0},{"geometry":null,"stopName":null,"stopId":null,"x":474283.0,"y":4201197.0},{"geometry":null,"stopName":null,"stopId":null,"x":474366.0,"y":4201268.0},{"geometry":null,"stopName":null,"stopId":null,"x":474444.0,"y":4201332.0},{"geometry":null,"stopName":null,"stopId":null,"x":474447.0,"y":4201334.0},{"geometry":null,"stopName":null,"stopId":null,"x":474561.0,"y":4201366.0},{"geometry":null,"stopName":null,"stopId":null,"x":474686.0,"y":4201403.0},{"geometry":null,"stopName":null,"stopId":null,"x":474782.0,"y":4201427.0},{"geometry":null,"stopName":null,"stopId":null,"x":474809.0,"y":4201425.0},{"geometry":null,"stopName":null,"stopId":null,"x":474831.0,"y":4201417.0},{"geometry":null,"stopName":null,"stopId":null,"x":474844.0,"y":4201412.0},{"geometry":null,"stopName":null,"stopId":null,"x":474894.0,"y":4201398.0},{"geometry":null,"stopName":null,"stopId":null,"x":474918.0,"y":4201388.0},{"geometry":null,"stopName":null,"stopId":null,"x":474991.0,"y":4201348.0},{"geometry":null,"stopName":null,"stopId":null,"x":475104.0,"y":4201302.0},{"geometry":null,"stopName":null,"stopId":null,"x":475160.0,"y":4201266.0},{"geometry":null,"stopName":null,"stopId":null,"x":475165.0,"y":4201263.0},{"geometry":null,"stopName":null,"stopId":null,"x":475165.0,"y":4201263.0},{"geometry":null,"stopName":null,"stopId":null,"x":475189.0,"y":4201252.0},{"geometry":null,"stopName":null,"stopId":null,"x":475220.0,"y":4201241.0},{"geometry":null,"stopName":null,"stopId":null,"x":475268.0,"y":4201232.0},{"geometry":null,"stopName":null,"stopId":null,"x":475290.0,"y":4201231.0},{"geometry":null,"stopName":null,"stopId":null,"x":475331.0,"y":4201234.0},{"geometry":null,"stopName":null,"stopId":null,"x":475423.0,"y":4201254.0},{"geometry":null,"stopName":null,"stopId":null,"x":475542.0,"y":4201258.0},{"geometry":null,"stopName":null,"stopId":null,"x":475542.0,"y":4201258.0},{"geometry":null,"stopName":null,"stopId":null,"x":475584.0,"y":4201262.0},{"geometry":null,"stopName":null,"stopId":null,"x":475600.0,"y":4201270.0},{"geometry":null,"stopName":null,"stopId":null,"x":475659.0,"y":4201324.0},{"geometry":null,"stopName":null,"stopId":null,"x":475713.0,"y":4201378.0},{"geometry":null,"stopName":null,"stopId":null,"x":475718.0,"y":4201383.0},{"geometry":null,"stopName":null,"stopId":null,"x":475721.0,"y":4201386.0},{"geometry":null,"stopName":null,"stopId":null,"x":475775.0,"y":4201439.0},{"geometry":null,"stopName":null,"stopId":null,"x":475852.0,"y":4201520.0},{"geometry":null,"stopName":null,"stopId":null,"x":475877.0,"y":4201588.0},{"geometry":null,"stopName":null,"stopId":null,"x":475898.0,"y":4201612.0},{"geometry":null,"stopName":null,"stopId":null,"x":475919.0,"y":4201629.0},{"geometry":null,"stopName":null,"stopId":null,"x":475951.0,"y":4201645.0},{"geometry":null,"stopName":null,"stopId":null,"x":475968.0,"y":4201653.0},{"geometry":null,"stopName":null,"stopId":null,"x":475990.0,"y":4201661.0},{"geometry":null,"stopName":null,"stopId":null,"x":476022.0,"y":4201676.0},{"geometry":null,"stopName":null,"stopId":null,"x":476041.0,"y":4201683.0},{"geometry":null,"stopName":null,"stopId":null,"x":476076.0,"y":4201697.0},{"geometry":null,"stopName":null,"stopId":null,"x":476105.0,"y":4201708.0},{"geometry":null,"stopName":null,"stopId":null,"x":476149.0,"y":4201724.0},{"geometry":null,"stopName":null,"stopId":null,"x":476161.0,"y":4201729.0},{"geometry":null,"stopName":null,"stopId":null,"x":476161.0,"y":4201729.0},{"geometry":null,"stopName":null,"stopId":null,"x":476218.0,"y":4201771.0},{"geometry":null,"stopName":null,"stopId":null,"x":476270.0,"y":4201822.0},{"geometry":null,"stopName":null,"stopId":null,"x":476271.0,"y":4201824.0},{"geometry":null,"stopName":null,"stopId":null,"x":476319.0,"y":4201872.0},{"geometry":null,"stopName":null,"stopId":null,"x":476350.0,"y":4201893.0},{"geometry":null,"stopName":null,"stopId":null,"x":476405.0,"y":4201907.0},{"geometry":null,"stopName":null,"stopId":null,"x":476430.0,"y":4201912.0},{"geometry":null,"stopName":null,"stopId":null,"x":476443.0,"y":4201916.0},{"geometry":null,"stopName":null,"stopId":null,"x":476443.0,"y":4201916.0},{"geometry":null,"stopName":null,"stopId":null,"x":476485.0,"y":4201922.0},{"geometry":null,"stopName":null,"stopId":null,"x":476510.0,"y":4201927.0},{"geometry":null,"stopName":null,"stopId":null,"x":476525.0,"y":4201936.0},{"geometry":null,"stopName":null,"stopId":null,"x":476549.0,"y":4201957.0},{"geometry":null,"stopName":null,"stopId":null,"x":476581.0,"y":4201976.0},{"geometry":null,"stopName":null,"stopId":null,"x":476610.0,"y":4201985.0},{"geometry":null,"stopName":null,"stopId":null,"x":476641.0,"y":4201988.0},{"geometry":null,"stopName":null,"stopId":null,"x":476688.0,"y":4201998.0},{"geometry":null,"stopName":null,"stopId":null,"x":476733.0,"y":4202013.0},{"geometry":null,"stopName":null,"stopId":null,"x":476780.0,"y":4202029.0},{"geometry":null,"stopName":null,"stopId":null,"x":476800.0,"y":4202042.0},{"geometry":null,"stopName":null,"stopId":null,"x":476863.0,"y":4202114.0},{"geometry":null,"stopName":null,"stopId":null,"x":476863.0,"y":4202114.0},{"geometry":null,"stopName":null,"stopId":null,"x":476915.0,"y":4202156.0},{"geometry":null,"stopName":null,"stopId":null,"x":476968.0,"y":4202188.0},{"geometry":null,"stopName":null,"stopId":null,"x":477055.0,"y":4202244.0},{"geometry":null,"stopName":null,"stopId":null,"x":477075.0,"y":4202258.0},{"geometry":null,"stopName":null,"stopId":null,"x":477121.0,"y":4202299.0},{"geometry":null,"stopName":null,"stopId":null,"x":477147.0,"y":4202319.0},{"geometry":null,"stopName":null,"stopId":null,"x":477198.0,"y":4202366.0},{"geometry":null,"stopName":null,"stopId":null,"x":477294.0,"y":4202448.0},{"geometry":null,"stopName":null,"stopId":null,"x":477295.0,"y":4202449.0},{"geometry":null,"stopName":null,"stopId":null,"x":477315.0,"y":4202466.0},{"geometry":null,"stopName":null,"stopId":null,"x":477403.0,"y":4202541.0},{"geometry":null,"stopName":null,"stopId":null,"x":477581.0,"y":4202695.0},{"geometry":null,"stopName":null,"stopId":null,"x":477694.0,"y":4202788.0},{"geometry":null,"stopName":null,"stopId":null,"x":477838.0,"y":4202914.0},{"geometry":null,"stopName":null,"stopId":null,"x":477838.0,"y":4202914.0},{"geometry":null,"stopName":null,"stopId":null,"x":477849.0,"y":4202921.0},{"geometry":null,"stopName":null,"stopId":null,"x":477852.0,"y":4202923.0},{"geometry":null,"stopName":null,"stopId":null,"x":477873.0,"y":4202941.0},{"geometry":null,"stopName":null,"stopId":null,"x":477873.0,"y":4202941.0},{"geometry":null,"stopName":null,"stopId":null,"x":477951.0,"y":4203007.0},{"geometry":null,"stopName":null,"stopId":null,"x":477975.0,"y":4203027.0},{"geometry":null,"stopName":null,"stopId":null,"x":478004.0,"y":4203055.0},{"geometry":null,"stopName":null,"stopId":null,"x":478051.0,"y":4203103.0},{"geometry":null,"stopName":null,"stopId":null,"x":478074.0,"y":4203128.0},{"geometry":null,"stopName":null,"stopId":null,"x":478077.0,"y":4203131.0},{"geometry":null,"stopName":null,"stopId":null,"x":478191.0,"y":4203253.0},{"geometry":null,"stopName":null,"stopId":null,"x":478278.0,"y":4203354.0},{"geometry":null,"stopName":null,"stopId":null,"x":478326.0,"y":4203418.0},{"geometry":null,"stopName":null,"stopId":null,"x":478359.0,"y":4203460.0},{"geometry":null,"stopName":null,"stopId":null,"x":478390.0,"y":4203503.0},{"geometry":null,"stopName":null,"stopId":null,"x":478433.0,"y":4203556.0},{"geometry":null,"stopName":null,"stopId":null,"x":478433.0,"y":4203556.0},{"geometry":null,"stopName":null,"stopId":null,"x":478435.0,"y":4203559.0},{"geometry":null,"stopName":null,"stopId":null,"x":478473.0,"y":4203601.0},{"geometry":null,"stopName":null,"stopId":null,"x":478508.0,"y":4203629.0},{"geometry":null,"stopName":null,"stopId":null,"x":478537.0,"y":4203647.0},{"geometry":null,"stopName":null,"stopId":null,"x":478642.0,"y":4203717.0},{"geometry":null,"stopName":null,"stopId":null,"x":478681.0,"y":4203760.0},{"geometry":null,"stopName":null,"stopId":null,"x":478722.0,"y":4203805.0},{"geometry":null,"stopName":null,"stopId":null,"x":478747.0,"y":4203834.0},{"geometry":null,"stopName":null,"stopId":null,"x":478764.0,"y":4203854.0},{"geometry":null,"stopName":null,"stopId":null,"x":478764.0,"y":4203854.0},{"geometry":null,"stopName":null,"stopId":null,"x":478799.0,"y":4203892.0},{"geometry":null,"stopName":null,"stopId":null,"x":478821.0,"y":4203921.0},{"geometry":null,"stopName":null,"stopId":null,"x":478899.0,"y":4204047.0},{"geometry":null,"stopName":null,"stopId":null,"x":478899.0,"y":4204047.0},{"geometry":null,"stopName":null,"stopId":null,"x":478900.0,"y":4204049.0},{"geometry":null,"stopName":null,"stopId":null,"x":478905.0,"y":4204057.0},{"geometry":null,"stopName":null,"stopId":null,"x":478949.0,"y":4204123.0},{"geometry":null,"stopName":null,"stopId":null,"x":478993.0,"y":4204168.0},{"geometry":null,"stopName":null,"stopId":null,"x":479060.0,"y":4204237.0},{"geometry":null,"stopName":null,"stopId":null,"x":479113.0,"y":4204292.0},{"geometry":null,"stopName":null,"stopId":null,"x":479152.0,"y":4204353.0},{"geometry":null,"stopName":null,"stopId":null,"x":479198.0,"y":4204423.0},{"geometry":null,"stopName":null,"stopId":null,"x":479251.0,"y":4204498.0},{"geometry":null,"stopName":null,"stopId":null,"x":479304.0,"y":4204580.0},{"geometry":null,"stopName":null,"stopId":null,"x":479313.0,"y":4204602.0},{"geometry":null,"stopName":null,"stopId":null,"x":479334.0,"y":4204656.0},{"geometry":null,"stopName":null,"stopId":null,"x":479349.0,"y":4204694.0},{"geometry":null,"stopName":null,"stopId":null,"x":479383.0,"y":4204779.0},{"geometry":null,"stopName":null,"stopId":null,"x":479405.0,"y":4204833.0},{"geometry":null,"stopName":null,"stopId":null,"x":479428.0,"y":4204893.0},{"geometry":null,"stopName":null,"stopId":null,"x":479446.0,"y":4204938.0},{"geometry":null,"stopName":null,"stopId":null,"x":479452.0,"y":4204953.0},{"geometry":null,"stopName":null,"stopId":null,"x":479481.0,"y":4205033.0},{"geometry":null,"stopName":null,"stopId":null,"x":479481.0,"y":4205033.0},{"geometry":null,"stopName":null,"stopId":null,"x":479492.0,"y":4205051.0},{"geometry":null,"stopName":null,"stopId":null,"x":479521.0,"y":4205125.0},{"geometry":null,"stopName":null,"stopId":null,"x":479559.0,"y":4205220.0},{"geometry":null,"stopName":null,"stopId":null,"x":479590.0,"y":4205294.0},{"geometry":null,"stopName":null,"stopId":null,"x":479590.0,"y":4205294.0},{"geometry":null,"stopName":null,"stopId":null,"x":479590.0,"y":4205334.0},{"geometry":null,"stopName":null,"stopId":null,"x":479590.0,"y":4205334.0},{"geometry":null,"stopName":null,"stopId":null,"x":479583.0,"y":4205358.0},{"geometry":null,"stopName":null,"stopId":null,"x":479583.0,"y":4205358.0},{"geometry":null,"stopName":null,"stopId":null,"x":479571.0,"y":4205369.0},{"geometry":null,"stopName":null,"stopId":null,"x":479571.0,"y":4205369.0},{"geometry":null,"stopName":null,"stopId":null,"x":479534.0,"y":4205408.0},{"geometry":null,"stopName":null,"stopId":null,"x":479411.0,"y":4205533.0},{"geometry":null,"stopName":null,"stopId":null,"x":479367.0,"y":4205581.0},{"geometry":null,"stopName":null,"stopId":null,"x":479325.0,"y":4205630.0},{"geometry":null,"stopName":null,"stopId":null,"x":479300.0,"y":4205654.0},{"geometry":null,"stopName":null,"stopId":null,"x":479271.0,"y":4205684.0},{"geometry":null,"stopName":null,"stopId":null,"x":479271.0,"y":4205684.0},{"geometry":null,"stopName":null,"stopId":null,"x":479267.0,"y":4205700.0},{"geometry":null,"stopName":null,"stopId":null,"x":479267.0,"y":4205717.0},{"geometry":null,"stopName":null,"stopId":null,"x":479317.0,"y":4205783.0},{"geometry":null,"stopName":null,"stopId":null,"x":479317.0,"y":4205783.0},{"geometry":null,"stopName":null,"stopId":null,"x":479338.0,"y":4205781.0},{"geometry":null,"stopName":null,"stopId":null,"x":479338.0,"y":4205781.0},{"geometry":null,"stopName":null,"stopId":null,"x":479342.0,"y":4205794.0},{"geometry":null,"stopName":null,"stopId":null,"x":479339.0,"y":4205808.0},{"geometry":null,"stopName":null,"stopId":null,"x":479322.0,"y":4205822.0},{"geometry":null,"stopName":null,"stopId":null,"x":479322.0,"y":4205822.0},{"geometry":null,"stopName":null,"stopId":null,"x":479326.0,"y":4205891.0},{"geometry":null,"stopName":null,"stopId":null,"x":479339.0,"y":4205999.0},{"geometry":null,"stopName":null,"stopId":null,"x":479358.0,"y":4206071.0},{"geometry":null,"stopName":null,"stopId":null,"x":479384.0,"y":4206157.0},{"geometry":null,"stopName":null,"stopId":null,"x":479387.0,"y":4206173.0},{"geometry":null,"stopName":null,"stopId":null,"x":479408.0,"y":4206230.0},{"geometry":null,"stopName":null,"stopId":null,"x":479431.0,"y":4206290.0},{"geometry":null,"stopName":null,"stopId":null,"x":479458.0,"y":4206342.0},{"geometry":null,"stopName":null,"stopId":null,"x":479471.0,"y":4206371.0},{"geometry":null,"stopName":null,"stopId":null,"x":479471.0,"y":4206371.0},{"geometry":null,"stopName":null,"stopId":null,"x":479471.0,"y":4206371.0}]</value>
+  </data>
+</root>

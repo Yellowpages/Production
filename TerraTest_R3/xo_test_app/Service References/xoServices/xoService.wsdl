@@ -1,0 +1,940 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="getReverseAddressXML">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="countryCode" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="x" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="y" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="SRID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getReverseAddressXMLResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getReverseAddressXMLResult" type="tns:webResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="webResponse">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="resType" type="tns:webResponseType" />
+          <s:element minOccurs="0" maxOccurs="1" name="resDescription" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="resObject" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="webResponseType">
+        <s:restriction base="s:string">
+          <s:enumeration value="Unknown" />
+          <s:enumeration value="Ok" />
+          <s:enumeration value="Error" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="terraFeature">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="featureID" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="attributes" type="tns:ArrayOfTerraFeatureAttribute" />
+          <s:element minOccurs="0" maxOccurs="1" name="description" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="geometryWKB" type="s:base64Binary" />
+          <s:element minOccurs="0" maxOccurs="1" name="geometryWKT" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="htmlSummary" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfTerraFeatureAttribute">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="terraFeatureAttribute" nillable="true" type="tns:terraFeatureAttribute" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="terraFeatureAttribute">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="field" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="fieldName" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="fieldType" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="fieldValue" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="geoAddress2">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="addType" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="addId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="addZip" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="addStreet" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="addMunicip" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="addNomos" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="extra1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="extra2" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="addNumb" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="addPoint" type="tns:simplePoint" />
+          <s:element minOccurs="0" maxOccurs="1" name="addPointWGS84" type="tns:simplePoint" />
+          <s:element minOccurs="0" maxOccurs="1" name="addFormated" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="simplePoint">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="x" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="y" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="geoAddress">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="addType" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="addId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="addZip" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="addStreet" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="addMunicip" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="addNumb" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="addPoint" type="tns:simplePoint" />
+          <s:element minOccurs="0" maxOccurs="1" name="addPointWGS84" type="tns:simplePoint" />
+          <s:element minOccurs="0" maxOccurs="1" name="addFormated" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfGeoAddress">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="geoAddress" nillable="true" type="tns:geoAddress" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfGeoAddress2">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="geoAddress2" nillable="true" type="tns:geoAddress2" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfTerraFeature">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="terraFeature" nillable="true" type="tns:terraFeature" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getReverseAddressXML2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="countryCode" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="x" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="y" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="SRID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getReverseAddressXML2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getReverseAddressXML2Result" type="tns:webResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getDrivingTimesForGeometries">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="machineID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="wkb" type="tns:ArrayOfBase64Binary" />
+            <s:element minOccurs="0" maxOccurs="1" name="time" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="countryCode" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="SRID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfBase64Binary">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="base64Binary" nillable="true" type="s:base64Binary" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="getDrivingTimesForGeometriesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getDrivingTimesForGeometriesResult" type="tns:webResponse" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getRoute_CAR_json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lang" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="authorization" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="routeStopsJSON" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="pedestrian" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="findBestSequence" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="preserveFirstStop" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="preserverLastStop" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="allowDaktilio" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="allowATTIKHOdos" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="allowCHARGERoads" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="allowFerry" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="allowUnpaved" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="fastest" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="extraParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getRoute_CAR_jsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getRoute_CAR_jsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getRoute_MMM_json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lang" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="authorization" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="routeStopsJSON" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="vehicles" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="dayofweek" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="useonevehicle" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="extraparam1" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="extraparam2" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="extraParams" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getRoute_MMM_jsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="getRoute_MMM_jsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="sea_getAvaliablePorts_json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lang" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="authorization" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="sea_getAvaliablePorts_jsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sea_getAvaliablePorts_jsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="sea_getAvaliableCompanies_json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lang" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="authorization" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="sea_getAvaliableCompanies_jsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sea_getAvaliableCompanies_jsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="sea_getAvaliableSchedules_json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lang" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="authorization" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="departPortId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="arrivePortId" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="dateString" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="daysWindow" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="sea_getAvaliableSchedules_jsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sea_getAvaliableSchedules_jsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="sea_tripPlanner_json">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="lang" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="authorization" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="routeStopsJSON" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="departTime" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="arriveTime" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="waitTimeBeforeSail" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="maxHoursInPort" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="sea_tripPlanner_jsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="sea_tripPlanner_jsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="webResponse" nillable="true" type="tns:webResponse" />
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="getReverseAddressXMLSoapIn">
+    <wsdl:part name="parameters" element="tns:getReverseAddressXML" />
+  </wsdl:message>
+  <wsdl:message name="getReverseAddressXMLSoapOut">
+    <wsdl:part name="parameters" element="tns:getReverseAddressXMLResponse" />
+  </wsdl:message>
+  <wsdl:message name="getReverseAddressXML2SoapIn">
+    <wsdl:part name="parameters" element="tns:getReverseAddressXML2" />
+  </wsdl:message>
+  <wsdl:message name="getReverseAddressXML2SoapOut">
+    <wsdl:part name="parameters" element="tns:getReverseAddressXML2Response" />
+  </wsdl:message>
+  <wsdl:message name="getDrivingTimesForGeometriesSoapIn">
+    <wsdl:part name="parameters" element="tns:getDrivingTimesForGeometries" />
+  </wsdl:message>
+  <wsdl:message name="getDrivingTimesForGeometriesSoapOut">
+    <wsdl:part name="parameters" element="tns:getDrivingTimesForGeometriesResponse" />
+  </wsdl:message>
+  <wsdl:message name="getRoute_CAR_jsonSoapIn">
+    <wsdl:part name="parameters" element="tns:getRoute_CAR_json" />
+  </wsdl:message>
+  <wsdl:message name="getRoute_CAR_jsonSoapOut">
+    <wsdl:part name="parameters" element="tns:getRoute_CAR_jsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="getRoute_MMM_jsonSoapIn">
+    <wsdl:part name="parameters" element="tns:getRoute_MMM_json" />
+  </wsdl:message>
+  <wsdl:message name="getRoute_MMM_jsonSoapOut">
+    <wsdl:part name="parameters" element="tns:getRoute_MMM_jsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="sea_getAvaliablePorts_jsonSoapIn">
+    <wsdl:part name="parameters" element="tns:sea_getAvaliablePorts_json" />
+  </wsdl:message>
+  <wsdl:message name="sea_getAvaliablePorts_jsonSoapOut">
+    <wsdl:part name="parameters" element="tns:sea_getAvaliablePorts_jsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="sea_getAvaliableCompanies_jsonSoapIn">
+    <wsdl:part name="parameters" element="tns:sea_getAvaliableCompanies_json" />
+  </wsdl:message>
+  <wsdl:message name="sea_getAvaliableCompanies_jsonSoapOut">
+    <wsdl:part name="parameters" element="tns:sea_getAvaliableCompanies_jsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="sea_getAvaliableSchedules_jsonSoapIn">
+    <wsdl:part name="parameters" element="tns:sea_getAvaliableSchedules_json" />
+  </wsdl:message>
+  <wsdl:message name="sea_getAvaliableSchedules_jsonSoapOut">
+    <wsdl:part name="parameters" element="tns:sea_getAvaliableSchedules_jsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="sea_tripPlanner_jsonSoapIn">
+    <wsdl:part name="parameters" element="tns:sea_tripPlanner_json" />
+  </wsdl:message>
+  <wsdl:message name="sea_tripPlanner_jsonSoapOut">
+    <wsdl:part name="parameters" element="tns:sea_tripPlanner_jsonResponse" />
+  </wsdl:message>
+  <wsdl:message name="getReverseAddressXMLHttpGetIn">
+    <wsdl:part name="countryCode" type="s:string" />
+    <wsdl:part name="x" type="s:string" />
+    <wsdl:part name="y" type="s:string" />
+    <wsdl:part name="SRID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getReverseAddressXMLHttpGetOut">
+    <wsdl:part name="Body" element="tns:webResponse" />
+  </wsdl:message>
+  <wsdl:message name="getReverseAddressXML2HttpGetIn">
+    <wsdl:part name="countryCode" type="s:string" />
+    <wsdl:part name="x" type="s:string" />
+    <wsdl:part name="y" type="s:string" />
+    <wsdl:part name="SRID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getReverseAddressXML2HttpGetOut">
+    <wsdl:part name="Body" element="tns:webResponse" />
+  </wsdl:message>
+  <wsdl:message name="getRoute_CAR_jsonHttpGetIn">
+    <wsdl:part name="lang" type="s:string" />
+    <wsdl:part name="authorization" type="s:string" />
+    <wsdl:part name="routeStopsJSON" type="s:string" />
+    <wsdl:part name="pedestrian" type="s:string" />
+    <wsdl:part name="findBestSequence" type="s:string" />
+    <wsdl:part name="preserveFirstStop" type="s:string" />
+    <wsdl:part name="preserverLastStop" type="s:string" />
+    <wsdl:part name="allowDaktilio" type="s:string" />
+    <wsdl:part name="allowATTIKHOdos" type="s:string" />
+    <wsdl:part name="allowCHARGERoads" type="s:string" />
+    <wsdl:part name="allowFerry" type="s:string" />
+    <wsdl:part name="allowUnpaved" type="s:string" />
+    <wsdl:part name="fastest" type="s:string" />
+    <wsdl:part name="extraParams" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getRoute_CAR_jsonHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getRoute_MMM_jsonHttpGetIn">
+    <wsdl:part name="lang" type="s:string" />
+    <wsdl:part name="authorization" type="s:string" />
+    <wsdl:part name="routeStopsJSON" type="s:string" />
+    <wsdl:part name="vehicles" type="s:string" />
+    <wsdl:part name="dayofweek" type="s:string" />
+    <wsdl:part name="useonevehicle" type="s:string" />
+    <wsdl:part name="extraparam1" type="s:string" />
+    <wsdl:part name="extraparam2" type="s:string" />
+    <wsdl:part name="extraParams" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getRoute_MMM_jsonHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="sea_getAvaliablePorts_jsonHttpGetIn">
+    <wsdl:part name="lang" type="s:string" />
+    <wsdl:part name="authorization" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="sea_getAvaliablePorts_jsonHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="sea_getAvaliableCompanies_jsonHttpGetIn">
+    <wsdl:part name="lang" type="s:string" />
+    <wsdl:part name="authorization" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="sea_getAvaliableCompanies_jsonHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="sea_getAvaliableSchedules_jsonHttpGetIn">
+    <wsdl:part name="lang" type="s:string" />
+    <wsdl:part name="authorization" type="s:string" />
+    <wsdl:part name="departPortId" type="s:string" />
+    <wsdl:part name="arrivePortId" type="s:string" />
+    <wsdl:part name="dateString" type="s:string" />
+    <wsdl:part name="daysWindow" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="sea_getAvaliableSchedules_jsonHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="sea_tripPlanner_jsonHttpGetIn">
+    <wsdl:part name="lang" type="s:string" />
+    <wsdl:part name="authorization" type="s:string" />
+    <wsdl:part name="routeStopsJSON" type="s:string" />
+    <wsdl:part name="departTime" type="s:string" />
+    <wsdl:part name="arriveTime" type="s:string" />
+    <wsdl:part name="waitTimeBeforeSail" type="s:string" />
+    <wsdl:part name="maxHoursInPort" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="sea_tripPlanner_jsonHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getReverseAddressXMLHttpPostIn">
+    <wsdl:part name="countryCode" type="s:string" />
+    <wsdl:part name="x" type="s:string" />
+    <wsdl:part name="y" type="s:string" />
+    <wsdl:part name="SRID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getReverseAddressXMLHttpPostOut">
+    <wsdl:part name="Body" element="tns:webResponse" />
+  </wsdl:message>
+  <wsdl:message name="getReverseAddressXML2HttpPostIn">
+    <wsdl:part name="countryCode" type="s:string" />
+    <wsdl:part name="x" type="s:string" />
+    <wsdl:part name="y" type="s:string" />
+    <wsdl:part name="SRID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getReverseAddressXML2HttpPostOut">
+    <wsdl:part name="Body" element="tns:webResponse" />
+  </wsdl:message>
+  <wsdl:message name="getRoute_CAR_jsonHttpPostIn">
+    <wsdl:part name="lang" type="s:string" />
+    <wsdl:part name="authorization" type="s:string" />
+    <wsdl:part name="routeStopsJSON" type="s:string" />
+    <wsdl:part name="pedestrian" type="s:string" />
+    <wsdl:part name="findBestSequence" type="s:string" />
+    <wsdl:part name="preserveFirstStop" type="s:string" />
+    <wsdl:part name="preserverLastStop" type="s:string" />
+    <wsdl:part name="allowDaktilio" type="s:string" />
+    <wsdl:part name="allowATTIKHOdos" type="s:string" />
+    <wsdl:part name="allowCHARGERoads" type="s:string" />
+    <wsdl:part name="allowFerry" type="s:string" />
+    <wsdl:part name="allowUnpaved" type="s:string" />
+    <wsdl:part name="fastest" type="s:string" />
+    <wsdl:part name="extraParams" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getRoute_CAR_jsonHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="getRoute_MMM_jsonHttpPostIn">
+    <wsdl:part name="lang" type="s:string" />
+    <wsdl:part name="authorization" type="s:string" />
+    <wsdl:part name="routeStopsJSON" type="s:string" />
+    <wsdl:part name="vehicles" type="s:string" />
+    <wsdl:part name="dayofweek" type="s:string" />
+    <wsdl:part name="useonevehicle" type="s:string" />
+    <wsdl:part name="extraparam1" type="s:string" />
+    <wsdl:part name="extraparam2" type="s:string" />
+    <wsdl:part name="extraParams" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="getRoute_MMM_jsonHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="sea_getAvaliablePorts_jsonHttpPostIn">
+    <wsdl:part name="lang" type="s:string" />
+    <wsdl:part name="authorization" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="sea_getAvaliablePorts_jsonHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="sea_getAvaliableCompanies_jsonHttpPostIn">
+    <wsdl:part name="lang" type="s:string" />
+    <wsdl:part name="authorization" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="sea_getAvaliableCompanies_jsonHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="sea_getAvaliableSchedules_jsonHttpPostIn">
+    <wsdl:part name="lang" type="s:string" />
+    <wsdl:part name="authorization" type="s:string" />
+    <wsdl:part name="departPortId" type="s:string" />
+    <wsdl:part name="arrivePortId" type="s:string" />
+    <wsdl:part name="dateString" type="s:string" />
+    <wsdl:part name="daysWindow" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="sea_getAvaliableSchedules_jsonHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="sea_tripPlanner_jsonHttpPostIn">
+    <wsdl:part name="lang" type="s:string" />
+    <wsdl:part name="authorization" type="s:string" />
+    <wsdl:part name="routeStopsJSON" type="s:string" />
+    <wsdl:part name="departTime" type="s:string" />
+    <wsdl:part name="arriveTime" type="s:string" />
+    <wsdl:part name="waitTimeBeforeSail" type="s:string" />
+    <wsdl:part name="maxHoursInPort" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="sea_tripPlanner_jsonHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="xoServiceSoap">
+    <wsdl:operation name="getReverseAddressXML">
+      <wsdl:input message="tns:getReverseAddressXMLSoapIn" />
+      <wsdl:output message="tns:getReverseAddressXMLSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getReverseAddressXML2">
+      <wsdl:input message="tns:getReverseAddressXML2SoapIn" />
+      <wsdl:output message="tns:getReverseAddressXML2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getDrivingTimesForGeometries">
+      <wsdl:input message="tns:getDrivingTimesForGeometriesSoapIn" />
+      <wsdl:output message="tns:getDrivingTimesForGeometriesSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getRoute_CAR_json">
+      <wsdl:input message="tns:getRoute_CAR_jsonSoapIn" />
+      <wsdl:output message="tns:getRoute_CAR_jsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getRoute_MMM_json">
+      <wsdl:input message="tns:getRoute_MMM_jsonSoapIn" />
+      <wsdl:output message="tns:getRoute_MMM_jsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sea_getAvaliablePorts_json">
+      <wsdl:input message="tns:sea_getAvaliablePorts_jsonSoapIn" />
+      <wsdl:output message="tns:sea_getAvaliablePorts_jsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sea_getAvaliableCompanies_json">
+      <wsdl:input message="tns:sea_getAvaliableCompanies_jsonSoapIn" />
+      <wsdl:output message="tns:sea_getAvaliableCompanies_jsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sea_getAvaliableSchedules_json">
+      <wsdl:input message="tns:sea_getAvaliableSchedules_jsonSoapIn" />
+      <wsdl:output message="tns:sea_getAvaliableSchedules_jsonSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sea_tripPlanner_json">
+      <wsdl:input message="tns:sea_tripPlanner_jsonSoapIn" />
+      <wsdl:output message="tns:sea_tripPlanner_jsonSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="xoServiceHttpGet">
+    <wsdl:operation name="getReverseAddressXML">
+      <wsdl:input message="tns:getReverseAddressXMLHttpGetIn" />
+      <wsdl:output message="tns:getReverseAddressXMLHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getReverseAddressXML2">
+      <wsdl:input message="tns:getReverseAddressXML2HttpGetIn" />
+      <wsdl:output message="tns:getReverseAddressXML2HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getRoute_CAR_json">
+      <wsdl:input message="tns:getRoute_CAR_jsonHttpGetIn" />
+      <wsdl:output message="tns:getRoute_CAR_jsonHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getRoute_MMM_json">
+      <wsdl:input message="tns:getRoute_MMM_jsonHttpGetIn" />
+      <wsdl:output message="tns:getRoute_MMM_jsonHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sea_getAvaliablePorts_json">
+      <wsdl:input message="tns:sea_getAvaliablePorts_jsonHttpGetIn" />
+      <wsdl:output message="tns:sea_getAvaliablePorts_jsonHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sea_getAvaliableCompanies_json">
+      <wsdl:input message="tns:sea_getAvaliableCompanies_jsonHttpGetIn" />
+      <wsdl:output message="tns:sea_getAvaliableCompanies_jsonHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sea_getAvaliableSchedules_json">
+      <wsdl:input message="tns:sea_getAvaliableSchedules_jsonHttpGetIn" />
+      <wsdl:output message="tns:sea_getAvaliableSchedules_jsonHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sea_tripPlanner_json">
+      <wsdl:input message="tns:sea_tripPlanner_jsonHttpGetIn" />
+      <wsdl:output message="tns:sea_tripPlanner_jsonHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="xoServiceHttpPost">
+    <wsdl:operation name="getReverseAddressXML">
+      <wsdl:input message="tns:getReverseAddressXMLHttpPostIn" />
+      <wsdl:output message="tns:getReverseAddressXMLHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getReverseAddressXML2">
+      <wsdl:input message="tns:getReverseAddressXML2HttpPostIn" />
+      <wsdl:output message="tns:getReverseAddressXML2HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getRoute_CAR_json">
+      <wsdl:input message="tns:getRoute_CAR_jsonHttpPostIn" />
+      <wsdl:output message="tns:getRoute_CAR_jsonHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getRoute_MMM_json">
+      <wsdl:input message="tns:getRoute_MMM_jsonHttpPostIn" />
+      <wsdl:output message="tns:getRoute_MMM_jsonHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sea_getAvaliablePorts_json">
+      <wsdl:input message="tns:sea_getAvaliablePorts_jsonHttpPostIn" />
+      <wsdl:output message="tns:sea_getAvaliablePorts_jsonHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sea_getAvaliableCompanies_json">
+      <wsdl:input message="tns:sea_getAvaliableCompanies_jsonHttpPostIn" />
+      <wsdl:output message="tns:sea_getAvaliableCompanies_jsonHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sea_getAvaliableSchedules_json">
+      <wsdl:input message="tns:sea_getAvaliableSchedules_jsonHttpPostIn" />
+      <wsdl:output message="tns:sea_getAvaliableSchedules_jsonHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="sea_tripPlanner_json">
+      <wsdl:input message="tns:sea_tripPlanner_jsonHttpPostIn" />
+      <wsdl:output message="tns:sea_tripPlanner_jsonHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="xoServiceSoap" type="tns:xoServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getReverseAddressXML">
+      <soap:operation soapAction="http://tempuri.org/getReverseAddressXML" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getReverseAddressXML2">
+      <soap:operation soapAction="http://tempuri.org/getReverseAddressXML2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDrivingTimesForGeometries">
+      <soap:operation soapAction="http://tempuri.org/getDrivingTimesForGeometries" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRoute_CAR_json">
+      <soap:operation soapAction="http://tempuri.org/getRoute_CAR_json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRoute_MMM_json">
+      <soap:operation soapAction="http://tempuri.org/getRoute_MMM_json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sea_getAvaliablePorts_json">
+      <soap:operation soapAction="http://tempuri.org/sea_getAvaliablePorts_json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sea_getAvaliableCompanies_json">
+      <soap:operation soapAction="http://tempuri.org/sea_getAvaliableCompanies_json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sea_getAvaliableSchedules_json">
+      <soap:operation soapAction="http://tempuri.org/sea_getAvaliableSchedules_json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sea_tripPlanner_json">
+      <soap:operation soapAction="http://tempuri.org/sea_tripPlanner_json" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="xoServiceSoap12" type="tns:xoServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getReverseAddressXML">
+      <soap12:operation soapAction="http://tempuri.org/getReverseAddressXML" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getReverseAddressXML2">
+      <soap12:operation soapAction="http://tempuri.org/getReverseAddressXML2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDrivingTimesForGeometries">
+      <soap12:operation soapAction="http://tempuri.org/getDrivingTimesForGeometries" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRoute_CAR_json">
+      <soap12:operation soapAction="http://tempuri.org/getRoute_CAR_json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRoute_MMM_json">
+      <soap12:operation soapAction="http://tempuri.org/getRoute_MMM_json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sea_getAvaliablePorts_json">
+      <soap12:operation soapAction="http://tempuri.org/sea_getAvaliablePorts_json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sea_getAvaliableCompanies_json">
+      <soap12:operation soapAction="http://tempuri.org/sea_getAvaliableCompanies_json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sea_getAvaliableSchedules_json">
+      <soap12:operation soapAction="http://tempuri.org/sea_getAvaliableSchedules_json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sea_tripPlanner_json">
+      <soap12:operation soapAction="http://tempuri.org/sea_tripPlanner_json" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="xoServiceHttpGet" type="tns:xoServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="getReverseAddressXML">
+      <http:operation location="/getReverseAddressXML" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getReverseAddressXML2">
+      <http:operation location="/getReverseAddressXML2" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRoute_CAR_json">
+      <http:operation location="/getRoute_CAR_json" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRoute_MMM_json">
+      <http:operation location="/getRoute_MMM_json" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sea_getAvaliablePorts_json">
+      <http:operation location="/sea_getAvaliablePorts_json" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sea_getAvaliableCompanies_json">
+      <http:operation location="/sea_getAvaliableCompanies_json" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sea_getAvaliableSchedules_json">
+      <http:operation location="/sea_getAvaliableSchedules_json" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sea_tripPlanner_json">
+      <http:operation location="/sea_tripPlanner_json" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="xoServiceHttpPost" type="tns:xoServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="getReverseAddressXML">
+      <http:operation location="/getReverseAddressXML" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getReverseAddressXML2">
+      <http:operation location="/getReverseAddressXML2" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRoute_CAR_json">
+      <http:operation location="/getRoute_CAR_json" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRoute_MMM_json">
+      <http:operation location="/getRoute_MMM_json" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sea_getAvaliablePorts_json">
+      <http:operation location="/sea_getAvaliablePorts_json" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sea_getAvaliableCompanies_json">
+      <http:operation location="/sea_getAvaliableCompanies_json" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sea_getAvaliableSchedules_json">
+      <http:operation location="/sea_getAvaliableSchedules_json" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sea_tripPlanner_json">
+      <http:operation location="/sea_tripPlanner_json" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="xoService">
+    <wsdl:port name="xoServiceSoap" binding="tns:xoServiceSoap">
+      <soap:address location="http://mapsrv3.terra.gr/avl/xoService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="xoServiceSoap12" binding="tns:xoServiceSoap12">
+      <soap12:address location="http://mapsrv3.terra.gr/avl/xoService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="xoServiceHttpGet" binding="tns:xoServiceHttpGet">
+      <http:address location="http://mapsrv3.terra.gr/avl/xoService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="xoServiceHttpPost" binding="tns:xoServiceHttpPost">
+      <http:address location="http://mapsrv3.terra.gr/avl/xoService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
