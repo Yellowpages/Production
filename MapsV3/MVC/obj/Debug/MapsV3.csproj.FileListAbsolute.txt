@@ -1,0 +1,5 @@
+C:\Documents and Settings\palmpanopoulos\My Documents\Visual Studio 2008\Projects\MapsV3\bin\MapsV3.dll
+C:\Documents and Settings\palmpanopoulos\My Documents\Visual Studio 2008\Projects\MapsV3\bin\MapsV3.pdb
+C:\Documents and Settings\palmpanopoulos\My Documents\Visual Studio 2008\Projects\MapsV3\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\palmpanopoulos\My Documents\Visual Studio 2008\Projects\MapsV3\obj\Debug\MapsV3.dll
+C:\Documents and Settings\palmpanopoulos\My Documents\Visual Studio 2008\Projects\MapsV3\obj\Debug\MapsV3.pdb

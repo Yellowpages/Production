@@ -1,0 +1,8 @@
+C:\Documents and Settings\palmpanopoulos\My Documents\Visual Studio 2008\Projects\MapsV3.Tests\bin\Debug\MapsV3.Tests.dll.config
+C:\Documents and Settings\palmpanopoulos\My Documents\Visual Studio 2008\Projects\MapsV3.Tests\bin\Debug\MapsV3.Tests.dll
+C:\Documents and Settings\palmpanopoulos\My Documents\Visual Studio 2008\Projects\MapsV3.Tests\bin\Debug\MapsV3.Tests.pdb
+C:\Documents and Settings\palmpanopoulos\My Documents\Visual Studio 2008\Projects\MapsV3.Tests\bin\Debug\MapsV3.dll
+C:\Documents and Settings\palmpanopoulos\My Documents\Visual Studio 2008\Projects\MapsV3.Tests\bin\Debug\MapsV3.pdb
+C:\Documents and Settings\palmpanopoulos\My Documents\Visual Studio 2008\Projects\MapsV3.Tests\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\palmpanopoulos\My Documents\Visual Studio 2008\Projects\MapsV3.Tests\obj\Debug\MapsV3.Tests.dll
+C:\Documents and Settings\palmpanopoulos\My Documents\Visual Studio 2008\Projects\MapsV3.Tests\obj\Debug\MapsV3.Tests.pdb

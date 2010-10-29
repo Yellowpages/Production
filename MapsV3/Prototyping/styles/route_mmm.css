@@ -1,0 +1,114 @@
+﻿/* Tab MMM Option Items ***********************************/
+#ctl00_mainArea_ContSearchOpts_tabMMM 
+{
+	border:solid 0px green; 
+	width:360px; 
+	margin-left:0px;
+	margin-top: 10px;
+	/*overflow: hidden;*/
+}
+
+#ctl00_mainArea_ContSearchOpts_tabMMM_pnlOptsMMM span
+{
+	font-weight:bold;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabMMM_pnlOptsMMM .mmm-line1 
+{
+	border-bottom:dashed 1px #CCC;
+	font-weight:normal;
+	padding-top:2px;
+	margin-left:5px;
+	height: 24px;
+	width:328px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabMMM_pnlOptsMMM .mmm-line1 span 
+{
+	font-weight:normal;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabMMM_pnlOptsMMM .mmm-line1 div
+{
+	float:left;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabMMM_pnlOptsMMM .mmm-line1 .line1-part2,
+#ctl00_mainArea_ContSearchOpts_tabMMM_pnlOptsMMM .mmm-line1 .line1-part4,
+#ctl00_mainArea_ContSearchOpts_tabMMM_pnlOptsMMM .mmm-line1 .line1-part6
+{
+	padding-top:2px;
+	padding-right:5px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabMMM_pnlOptsMMM .mmm-line2
+{
+	border-bottom:dashed 1px #CCC;
+	padding-top:4px;
+	margin-left:5px;
+	height: 62px;
+	width:328px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabMMM_pnlOptsMMM .mmm-line2 div span
+{
+	font-weight:normal;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabMMM_pnlOptsMMM .mmm-line2 div 
+{
+	float:left;
+	border: solid 0px green;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabMMM_pnlOptsMMM .mmm-line2 .line2-part1,
+#ctl00_mainArea_ContSearchOpts_tabMMM_pnlOptsMMM .mmm-line2 .line2-part3,
+#ctl00_mainArea_ContSearchOpts_tabMMM_pnlOptsMMM .mmm-line2 .line2-part5
+{
+	border:solid 0px gray;
+	width:110px;
+	padding-top:2px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabMMM_pnlOptsMMM .mmm-line2 .line2-part2,
+#ctl00_mainArea_ContSearchOpts_tabMMM_pnlOptsMMM .mmm-line2 .line2-part4,
+#ctl00_mainArea_ContSearchOpts_tabMMM_pnlOptsMMM .mmm-line2 .line2-part6
+{
+	border:solid 0px gray;
+	width:174px;
+	padding-top:2px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabMMM_pnlOptsMMM .mmm-line3
+{
+	border-bottom:dashed 0px #CCC;
+	padding-top:4px;
+	margin-left:5px;
+	height: 25px;
+	width:328px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabMMM_pnlOptsMMM .mmm-line3 div span
+{
+	font-weight:normal;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabMMM_pnlOptsMMM .mmm-line3 div 
+{
+	float:left;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabMMM_pnlOptsMMM .mmm-line3 .line3-part1
+{
+	border:solid 0px gray;
+	width:305px;
+	padding-top:2px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabMMM .option-submit 
+{
+	border-top: solid 1px #cccccc;
+	margin-top:5px;
+	padding:10px 10px 0px 260px;
+}
+/* Tab MMM Option Items ***********************************/

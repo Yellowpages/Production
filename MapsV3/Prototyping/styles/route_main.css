@@ -1,0 +1,262 @@
+﻿/* Search Container Section *******************************/
+#search-container 
+{
+	width:389px;
+	float:left;
+	background: url(../media/layout/shadow-line.gif) repeat-y right top;
+	/*overflow-y:scroll;*/
+}
+
+#search-form 
+{
+	margin-left:5px; 
+	margin-right:5px;
+}
+
+#search-form input
+{
+	background:url(../media/images/input-bg.gif) repeat-x;
+	border: solid 1px silver;
+	height: 18px;
+	padding-left: 2px;
+	width: 307px;
+}
+
+#search-container .section-header
+{
+	font-weight:bold;
+	margin-left: 20px;
+	margin-top: 5px;
+	margin-bottom: 2px;
+}
+
+#search-from
+{	
+	width:357px;
+	height: 30px;
+}
+
+#search-to
+{
+	padding-top:0px;
+	width:357px;
+	height: 30px;
+}
+
+#search-actions
+{	
+	height:26px;
+	margin-left:25px;
+	width: 332px;
+}
+
+#search-actions .option-item
+{
+	float:left;
+	font-size: 10px;
+	padding-right:10px;
+	padding-top:2px;
+}
+
+#search-actions .option-element
+{
+	float:left;
+}
+
+#search-actions .option-element a
+{
+	padding-left:4px;
+}
+/* Search Form Options ************************************/
+/* -> Main Tabs ***/
+.gray .ajax__tab_header
+{
+    background: url("../media/layout/line-option-gray.png") repeat-x;
+    font-size:12px;
+    display:block;
+    padding-left: 80px;
+}
+.gray .ajax__tab_header .ajax__tab_outer
+{
+	background:url(../media/layout/options-tab-left.gif) no-repeat scroll left top transparent;
+    padding-left:7px;
+    margin-right:3px;
+}
+.gray .ajax__tab_header .ajax__tab_inner 
+{
+	background:url(../media/layout/options-tab-right.gif) no-repeat scroll right top transparent;
+    padding:0px 8px 0px 0px;
+}
+
+/*
+#ctl00_mainArea_ContSearchOpts_tabCar
+{
+	border:solid 1px green;
+	/*height: 400px;
+	overflow-y:scroll;
+	overflow-x:hidden;
+}
+*/
+
+#ctl00_mainArea_ContSearchOpts_tabCar
+/*#tab_car_scroller*/
+{
+	border:solid 0px green;
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+#tab_car_scroller div 
+{
+	overflow:hidden;
+}
+/* Testing */
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tab .ajax__tab_outer .ajax__tab_inner .ajax__tab_tab
+{
+	background: url(../media/images/car-icon.png) center center no-repeat transparent;
+	width:22px;
+	height:23px;
+	cursor:pointer;
+	border:solid 0px green;
+	padding-top:0px;
+	background-color: #e0e0e0;
+	border-bottom: solid 1px #cccccc;
+	margin:0;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabPedestrian_tab .ajax__tab_outer .ajax__tab_inner .ajax__tab_tab
+{
+	background: url(../media/images/walk-icon.png) center center no-repeat transparent;
+	width:22px;
+	height:23px;
+	cursor:pointer;
+	border:solid 0px green;
+	padding-top:0px;
+	background-color: #e0e0e0;
+	border-bottom: solid 1px #cccccc;
+	margin:0;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabMMM_tab .ajax__tab_outer .ajax__tab_inner .ajax__tab_tab
+{
+	background: url(../media/images/bus-icon.png) center center no-repeat transparent;
+	width:22px;
+	height:23px;
+	cursor:pointer;
+	border:solid 0px green;
+	padding-top:0px;
+	background-color: #e0e0e0;
+	border-bottom: solid 1px #cccccc;
+	margin:0;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabTrip_tab .ajax__tab_outer .ajax__tab_inner .ajax__tab_tab
+{
+	background: url(../media/images/trip-icon.png) center center no-repeat transparent;
+	width:40px;
+	height:23px;
+	cursor:pointer;
+	padding-top:0px;
+	background-color: #e0e0e0;
+	border-bottom: solid 1px #cccccc;
+}
+
+.gray .ajax__tab_active .ajax__tab_outer 
+{
+	background:url(../media/layout/active-options-tab-left.gif) no-repeat scroll left top transparent;
+}
+
+.gray .ajax__tab_active .ajax__tab_outer .ajax__tab_tab 
+{
+	background-color: #cccccc !important;
+}
+
+.gray .ajax__tab_active .ajax__tab_inner 
+{
+    background:url(../media/layout/active-options-tab-right.gif) no-repeat scroll right top transparent;
+}
+
+.gray .ajax__tab_body 
+{
+    width:360px;
+}
+
+.gray  
+{
+	border:solid 0px gray;
+	padding-left:7px;
+	padding-top:10px;
+	width:360px;
+}
+/* -> Main Tabs ***/
+
+/* -> Inner Tabs [CAR] ***/
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_tab
+{
+	cursor:pointer;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner 
+{
+	padding-left:0px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_header
+{
+	/*background: url("../media/layout/line-option-gray.png") 0;*/
+	border-bottom: solid 1px #cccccc;
+	padding-left:0px;
+    font-size:12px;
+    display:block;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner .ajax__tab_header .ajax__tab_outer 
+{
+	height:23px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner .ajax__tab_header .ajax__tab_outer .ajax__tab_inner 
+{
+	height:23px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner .ajax__tab_header .ajax__tab_outer .ajax__tab_inner .ajax__tab_tab
+{
+	height:18px;
+	padding-top:5px;
+}
+/* -> Inner Tabs [CAR] ***/
+
+/* Search Form Options ************************************/
+/* Search Form Option Items *******************************/
+#search-form-option-items 
+{
+	border:solid 0px green; 
+	width:348px; 
+	margin-left:0px;
+	margin-top: 10px;
+	/*overflow: hidden;*/
+}
+
+#ctl00_mainArea_upnlOptsDrivingTitle 
+{
+	padding-left:7px;
+}
+
+#search-form-option-items .form-option-item-header
+{
+	border:solid 0px green;
+	color:black;
+	text-decoration:underline;
+	width:357px;
+	cursor: pointer;
+}
+
+/* Search Form Option Items *******************************/
+/* Search Container Section *******************************/
+
+/* Map Container Section***********************************/
+#map_container 
+{
+}
+/* Map Container Section***********************************/

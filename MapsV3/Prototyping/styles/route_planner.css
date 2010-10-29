@@ -1,0 +1,49 @@
+﻿/* Tab Trip Planner Option Items **************************/
+#ctl00_mainArea_ContSearchOpts_tabTrip
+{
+	border:solid 0px green; 
+	width:348px; 
+	margin-left:0px;
+	margin-top: 10px;
+	/*overflow: hidden;*/
+}
+
+#ctl00_mainArea_ContSearchOpts_tabTrip_pnlOptsTrip span
+{
+	font-weight:bold;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabTrip_pnlOptsTrip .trip-line
+{
+	border:solid 0px green;
+	font-weight:normal;
+	padding-top:2px;
+	margin-left:5px;
+	height: 55px;
+	width:328px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabTrip_pnlOptsTrip .trip-line span 
+{
+	font-weight:normal;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabTrip_pnlOptsTrip .trip-line .trip-line-cont
+{
+	border-bottom:solid 1px silver;
+	height:20px;
+	margin-bottom:4px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabTrip_pnlOptsTrip .trip-line div .header
+{
+	width:185px;
+	padding-top:5px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabTrip_pnlOptsTrip .trip-line div div
+{
+	float:left;
+}
+
+/* Tab Trip Planner Option Items **************************/

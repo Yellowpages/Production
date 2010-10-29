@@ -1,0 +1,5 @@
+C:\Documents and Settings\palmpanopoulos\My Documents\Visual Studio 2008\Projects\MapsV3.TerraTests\bin\MapsV3.TerraTests.dll
+C:\Documents and Settings\palmpanopoulos\My Documents\Visual Studio 2008\Projects\MapsV3.TerraTests\bin\MapsV3.TerraTests.pdb
+C:\Documents and Settings\palmpanopoulos\My Documents\Visual Studio 2008\Projects\MapsV3.TerraTests\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\palmpanopoulos\My Documents\Visual Studio 2008\Projects\MapsV3.TerraTests\obj\Debug\MapsV3.TerraTests.dll
+C:\Documents and Settings\palmpanopoulos\My Documents\Visual Studio 2008\Projects\MapsV3.TerraTests\obj\Debug\MapsV3.TerraTests.pdb

@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapsV3", "MapsV3.csproj", "{73DD9E57-F85C-4F42-AC28-2E839ECFB8CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapsV3.Tests", "..\MapsV3.Tests\MapsV3.Tests.csproj", "{ADA075CE-5EB2-401F-8C32-BB98A160BB4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapsV3.Prototyping", "..\MapsV3.Prototyping\MapsV3.Prototyping.csproj", "{64D0DF13-A19D-4BB9-A712-2B19AAF3ABD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapsV3.TerraTests", "..\MapsV3.TerraTests\MapsV3.TerraTests.csproj", "{15E91D60-9017-4B08-94B0-F3CE593DBB80}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73DD9E57-F85C-4F42-AC28-2E839ECFB8CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73DD9E57-F85C-4F42-AC28-2E839ECFB8CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73DD9E57-F85C-4F42-AC28-2E839ECFB8CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73DD9E57-F85C-4F42-AC28-2E839ECFB8CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADA075CE-5EB2-401F-8C32-BB98A160BB4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADA075CE-5EB2-401F-8C32-BB98A160BB4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADA075CE-5EB2-401F-8C32-BB98A160BB4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADA075CE-5EB2-401F-8C32-BB98A160BB4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64D0DF13-A19D-4BB9-A712-2B19AAF3ABD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64D0DF13-A19D-4BB9-A712-2B19AAF3ABD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64D0DF13-A19D-4BB9-A712-2B19AAF3ABD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64D0DF13-A19D-4BB9-A712-2B19AAF3ABD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15E91D60-9017-4B08-94B0-F3CE593DBB80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15E91D60-9017-4B08-94B0-F3CE593DBB80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15E91D60-9017-4B08-94B0-F3CE593DBB80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15E91D60-9017-4B08-94B0-F3CE593DBB80}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

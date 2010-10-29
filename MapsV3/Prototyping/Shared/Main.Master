@@ -1,0 +1,109 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="MapsV3.Prototyping.Shared.Main" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title></title>
+    <link href="../styles/master_main.css" rel="stylesheet" type="text/css" />
+
+    <script src="../scripts/jquery-1.4.2.js" type="text/javascript"></script>
+    
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+    </asp:ToolkitScriptManager>
+    <div style="height:100%">
+    <!-- TOP CONTAINER SECTION [Begin] -->
+    <div id="top-container">
+        <!-- Header Section [Begin] -->
+        <div id="header-container">
+            <div id="site-section-links">
+                <div>
+                    <img src="media/images/icon-16x16.png" />
+                </div>
+                <div>
+                    <a href="http://www.xo.gr/">Αναζήτηση</a>
+                </div>
+                <div>
+                    <img src="media/images/icon-16x16.png" />
+                </div>
+                <div>
+                    <a href="http://www.xo.gr/taxidia/">Ταξίδια</a>
+                </div>
+                <div>
+                    <img src="media/images/icon-16x16.png" />
+                </div>
+                <div>
+                    <a href="http://www.xo.gr/default.aspx?pid=71&&la=1">Χρήσιμα</a>
+                </div>
+                <div>
+                    <img src="media/images/icon-16x16.png" />
+                </div>
+                <div>
+                    <a href="http://www.xo.gr/idees-lyseis/">Ιδέες - Λύσεις</a>
+                </div>
+                <div>
+                    <img src="media/images/icon-16x16.png" />
+                </div>
+                <div>
+                    <a href="http://www.xo.gr/default.aspx?pid=83&&la=1">Mobile</a>
+                </div>
+                <div>
+                    <img src="media/images/icon-16x16.png" />
+                </div>
+                <div>
+                    <a href="http://www.xo.gr/cinema/">Ψυχαγωγία</a>
+                </div>
+                <div>
+                    <img src="media/images/icon-16x16.png" />
+                </div>
+                <div>
+                    <a href="../route_search.aspx">Χάρτες</a>
+                </div>
+            </div>
+            <div id="site-personalization-links">
+                <div style="float: left;">
+                    <a href="#">Ο Χρυσός Οδηγός μου</a>&nbsp;|&nbsp;
+                </div>
+                <div style="float: left;">
+                    <a href="#">Αποσύνδεση</a>&nbsp;|&nbsp;
+                </div>
+                <div style="float: left;">
+                    <a href="#">English</a>
+                </div>
+            </div>
+        </div>
+        <!-- Header Section [End] -->
+        <!-- Map Tabs Section [Begin] -->
+        <div id="tab-container">
+            <div class="logo" style="border: solid 0px green; float: left">
+                <img src="../media/images/el/logo.gif" alt="" />
+            </div>
+            <div id="map-tabs" style="border: solid 0px black;">
+                <ul>
+                <asp:ContentPlaceHolder ID="tabArea" runat="server">
+    
+                </asp:ContentPlaceHolder>
+                </ul>
+            </div>
+            <div class="map-links" style="border: solid 0px blue; float: right">
+                <div class="map-link">
+                    <img src="../media/images/print.gif" />
+                </div>
+            </div>
+        </div>
+        <!-- Map Tabs Section [End] -->
+    </div>
+    <!-- TOP CONTAINER SECTION [End] -->
+    <asp:ContentPlaceHolder ID="mainArea" runat="server">
+    
+    </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

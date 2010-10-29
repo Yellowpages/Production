@@ -1,0 +1,159 @@
+﻿/***************************************************
+	Callouts
+*/
+#CalloutDivXO_Identify_header
+{
+	font-weight:bold;
+}
+.CalloutDivXO_Identify_text
+{
+	font : normal 10px Verdana, Arial, Helvetica, sans-serif;
+}
+
+#CalloutDivXO_Identify
+{
+      position:absolute;
+      overflow:auto;
+      left:20px;
+      top:20px;
+      width:180px;
+      height:90px;
+      z-index:16;
+	  cursor:text;
+}
+
+#CalloutDivXO_IdentifyClose
+{
+      position:absolute;
+      width:14px;
+      height:14px;
+      z-index:17;
+     cursor:pointer;
+}
+#CalloutDivXO1
+{
+      position:absolute;
+      overflow:auto;
+      left:20px;
+      top:20px;
+      width:180px;
+      height:90px;
+      z-index:16;
+	  cursor:text;
+}
+
+#CalloutDivXO1Close
+{
+      position:absolute;
+      width:14px;
+      height:14px;
+      z-index:17;
+     cursor:pointer;
+}
+
+#CalloutDivXO2Close
+{
+     position:absolute;
+      width:14px;
+      height:14px;
+      z-index:17;
+      cursor:pointer;
+}
+
+#CalloutDivXO2
+{
+      position:absolute;
+      overflow:auto;
+      left:30px;
+      top:22px;
+      width:195px;
+      height:126px;
+      z-index:16;
+}
+
+#CalloutDivXOMapClose
+
+{
+     position:absolute;
+      width:14px;
+      height:14px;
+      z-index:17;
+      cursor:pointer;
+}
+
+#CalloutDivXOMap
+{
+      position:absolute;
+      overflow:auto;
+      width:400px;
+      height:300px;
+      z-index:16;
+}
+
+/***************************************************
+	Pins
+*/
+
+.PoiPin
+{
+	cursor:pointer;
+}
+
+.Pin
+{
+	cursor:pointer;
+}
+
+/***************************************************
+	Context menu
+*/
+
+.ContextMenu
+{
+	background-color:White;
+	border:1px solid Gray;
+	position:absolute;
+	width: 170px;
+	z-index:20;
+	height:0px;
+	font : normal 11px Verdana, Arial, Helvetica, sans-serif;
+	float: left;
+}
+.context_menu_item
+{
+	color:Blue;
+	width:100%;
+	left:0px;
+}
+.context_menu_item_hover
+{
+	color:Blue;
+	width:100%;
+	left:0px;
+	background-color:#DEFCFB;
+	cursor:pointer;
+}
+
+/***************************************************
+	Map Type Selector Tag
+*/
+
+.MapTypeSelect
+{
+	position:absolute;
+	border: 2px solid #666666;
+	background-color:White;
+	font-size: 12px;
+	font-weight: normal;
+	font-family: Tahoma,Arial, Verdana, 'Trebuchet MS',  GRHelvetica;
+	color:Black;
+	text-align:center;
+	cursor:pointer;
+}
+
+.MapTypeSelect_Selected
+{
+	font-weight: bold;
+	background-color:#666666;
+	color:White;
+}

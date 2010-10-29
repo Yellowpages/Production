@@ -1,0 +1,241 @@
+﻿/* Tab Car Option Items ***********************************/
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_upnlOptsDrv
+{
+	padding-top:4px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_upnlOptsDrivingTitle div 
+{
+	padding-bottom:4px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_upnlOptsDrv .pnlFrmOptsDrvTitle div 
+{
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_upnlOptsDrivingTitle .pnlFrmOptsDrvTitle div span
+{
+	padding-left:5px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts span
+{
+	text-decoration: none;
+	color:black;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlFrmOptsPOITitle 
+{
+	cursor:pointer;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlOptsDrvTitle 
+{
+	padding-bottom:4px;
+	cursor:pointer;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlOptsCostTitle
+{
+	cursor:pointer;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts .poi-categ-name 
+{
+	font-weight:normal;
+}
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlFrmOptsDriving
+{
+	border:solid 0px green;
+	margin-left: 12px;
+	float:left;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlOptsDrvTitle span,
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlOptsCostTitle span
+{
+	font-weight:bold;
+	margin-left: 2px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlFrmOptsDriving
+{
+	font-weight: normal;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlFrmOptsDriving div 
+{
+	border:solid 0px green;
+	float:left;
+	width:320px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts 
+{
+	font-weight:bold;
+	padding: 5px 0px 0px 7px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlFrmOptsDriving .driving-line1 
+{
+	border-bottom:dashed 1px #CCC;
+	padding-bottom:5px;
+	float:left;
+	font-weight:normal;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlFrmOptsDriving .line1-part1
+{
+	padding-left: 0px;
+	width: 22px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlFrmOptsDriving .line1-part3
+{
+	padding-left: 4px;
+	width: 22px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlFrmOptsDriving .line1-part2, 
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlFrmOptsDriving .line1-part4
+{
+	padding-top: 2px;
+	width:85px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlFrmOptsDriving .driving-line2
+{
+	padding-top:5px;
+	border: solid 0px gray;
+	float:left;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlFrmOptsDriving .line2-part1
+{
+	width:22px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlFrmOptsDriving .line2-part2
+{
+	width:150px;
+	padding: 2px 0px 0px 0px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlFrmOptsDriving .driving-line3
+{
+	float:left;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlFrmOptsDriving .line3-part1 
+{
+	width:22px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlFrmOptsDriving .line3-part2 
+{
+	width:150px;
+	padding: 2px 0px 0px 0px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlFrmOptsDriving .driving-line4 
+{
+	border-bottom: 1px dashed rgb(204, 204, 204);
+	padding-bottom:5px;
+	float:left;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlFrmOptsDriving .line4-part1 
+{
+	width:22px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlFrmOptsDriving .line4-part2
+{
+	width:150px;
+	padding: 2px 0px 0px 0px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlFrmOptsDriving .driving-line5
+{
+	padding-top: 4px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlFrmOptsDriving .driving-line5 ul
+{
+	list-style-type:none;
+	padding: 0px 0px 0px 4px;
+	margin: 0px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlFrmOptsDriving .driving-line5 ul li
+{
+	float:left;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlFrmOptsDriving .part1, 
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlFrmOptsDriving .part3, 
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlFrmOptsDriving .part5
+{
+	padding-top: 2px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlFrmOptsDriving .part2, 
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlFrmOptsDriving .part4
+{
+	padding-left: 4px
+}
+
+#search-form-option-items .ContSearchOpts_tabCar_lblExpandCollapseCost span
+{
+	border:solid 0px green;
+	color:black;
+	text-decoration:underline;
+	width:357px;
+	
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_lblExpandCollapseCost
+{
+	/*overflow:hidden;*/
+	margin-left:12px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlFrmOptsCost
+{
+	width:327px;
+	border:solid 0px gray;
+	margin-left:12px;
+	font-weight:normal;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlFrmOptsCost .cost-containtainer
+{	
+	border:solid 0px #CCC;
+	height:23px;
+	margin-bottom:2px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlFrmOptsCost div div 
+{	
+	float:left;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlFrmOptsCost div .header
+{
+	width:177px;
+	padding-top:3px;
+}
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts_pnlFrmOptsCost div .header-2
+{
+	width:177px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabCar_tabCar_inner_car_opts .option-submit 
+{
+	border-top: solid 1px #cccccc;
+	margin-top:5px;
+	padding:10px 10px 0px 252px;
+}
+/* Tab Car Option Items ***********************************/

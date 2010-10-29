@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Maps.v3.Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2006/04/edm/ssdl">
+        <EntityContainer Name="Mapsv3ModelStoreContainer">
+          <EntitySet Name="poi" EntityType="Maps.v3.Model.Store.poi" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="poi_category" EntityType="Maps.v3.Model.Store.poi_category" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_poi_poi" Association="Maps.v3.Model.Store.FK_poi_poi">
+            <End Role="poi" EntitySet="poi" />
+            <End Role="poi1" EntitySet="poi" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="poi">
+          <Key>
+            <PropertyRef Name="poi_id" />
+          </Key>
+          <Property Name="poi_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="fix_poi_id" Type="int" Nullable="false" />
+          <Property Name="categ_id" Type="int" />
+          <Property Name="poi_name" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="address_line1" Type="nvarchar" MaxLength="50" />
+          <Property Name="address_line2" Type="nvarchar" MaxLength="50" />
+          <Property Name="address_line3" Type="nvarchar" MaxLength="50" />
+          <Property Name="municipality" Type="nvarchar" MaxLength="50" />
+          <Property Name="post_code" Type="varchar" MaxLength="5" />
+          <Property Name="contact_phone" Type="nchar" MaxLength="10" />
+          <Property Name="coord_x" Type="numeric" Precision="11" Scale="4" />
+          <Property Name="coord_y" Type="numeric" Precision="11" Scale="4" />
+        </EntityType>
+        <EntityType Name="poi_category">
+          <Key>
+            <PropertyRef Name="poi_categ_id" />
+          </Key>
+          <Property Name="poi_categ_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="fix_categ_id" Type="int" Nullable="false" />
+          <Property Name="categ_name" Type="nvarchar" Nullable="false" MaxLength="100" />
+        </EntityType>
+        <Association Name="FK_poi_poi">
+          <End Role="poi" Type="Maps.v3.Model.Store.poi" Multiplicity="1" />
+          <End Role="poi1" Type="Maps.v3.Model.Store.poi" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="poi">
+              <PropertyRef Name="poi_id" />
+            </Principal>
+            <Dependent Role="poi1">
+              <PropertyRef Name="poi_id" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Maps.v3.Model" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+        <EntityContainer Name="MapsDevEntities">
+          <EntitySet Name="POISet" EntityType="Maps.v3.Model.POI" />
+          <EntitySet Name="poi_category" EntityType="Maps.v3.Model.poi_category" />
+          </EntityContainer>
+        <EntityType Name="POI">
+          <Key>
+            <PropertyRef Name="AutoPoiID" />
+            </Key>
+          <Property Name="AutoPoiID" Type="Int32" Nullable="false" />
+          <Property Name="PoiId" Type="Int32" Nullable="false" />
+          <Property Name="PoiName" Type="String" Nullable="false" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="CategoryId" Type="Int32" Nullable="true" />
+          <Property Name="AddressLine1" Type="String" Nullable="true" />
+          <Property Name="AddressLine2" Type="String" Nullable="true" />
+          <Property Name="AddressLine3" Type="String" Nullable="true" />
+          <Property Name="Municipality" Type="String" Nullable="true" />
+          <Property Name="PostCode" Type="String" Nullable="true" />
+          <Property Name="ContactPhone" Type="String" Nullable="true" />
+          <Property Name="CoordX" Type="Decimal" Nullable="true" />
+          <Property Name="CoordY" Type="Decimal" Nullable="true" />
+          </EntityType>
+        <EntityType Name="poi_category">
+          <Key>
+            <PropertyRef Name="AutoCategId" /></Key>
+          <Property Name="AutoCategId" Type="Int32" Nullable="false" />
+          <Property Name="CategId" Type="Int32" Nullable="false" />
+          <Property Name="CategName" Type="String" Nullable="false" /></EntityType>
+        </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="urn:schemas-microsoft-com:windows:storage:mapping:CS">
+        <EntityContainerMapping StorageEntityContainer="Mapsv3ModelStoreContainer" CdmEntityContainer="MapsDevEntities">
+          <EntitySetMapping Name="POISet">
+            <EntityTypeMapping TypeName="IsTypeOf(Maps.v3.Model.POI)">
+              <MappingFragment StoreEntitySet="poi">
+                <ScalarProperty Name="CoordY" ColumnName="coord_y" />
+                <ScalarProperty Name="CoordX" ColumnName="coord_x" />
+                <ScalarProperty Name="ContactPhone" ColumnName="contact_phone" />
+                <ScalarProperty Name="PostCode" ColumnName="post_code" />
+                <ScalarProperty Name="Municipality" ColumnName="municipality" />
+                <ScalarProperty Name="AddressLine3" ColumnName="address_line3" />
+                <ScalarProperty Name="AddressLine2" ColumnName="address_line2" />
+                <ScalarProperty Name="AddressLine1" ColumnName="address_line1" />
+                <ScalarProperty Name="CategoryId" ColumnName="categ_id" />
+                <ScalarProperty Name="PoiName" ColumnName="poi_name" />
+                <ScalarProperty Name="AutoPoiID" ColumnName="poi_id" />
+                <ScalarProperty Name="PoiId" ColumnName="fix_poi_id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="poi_category">
+            <EntityTypeMapping TypeName="IsTypeOf(Maps.v3.Model.poi_category)">
+              <MappingFragment StoreEntitySet="poi_category">
+                <ScalarProperty Name="CategName" ColumnName="categ_name" />
+                <ScalarProperty Name="CategId" ColumnName="fix_categ_id" />
+                <ScalarProperty Name="AutoCategId" ColumnName="poi_categ_id" /></MappingFragment></EntityTypeMapping></EntitySetMapping>
+          </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2007/06/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram Name="Maps_V3">
+        <EntityTypeShape EntityType="Maps.v3.Model.POI" Width="1.5" PointX="0.75" PointY="0.75" Height="1.427958984375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Maps.v3.Model.poi_category" Width="1.5" PointX="3.375" PointY="0.75" Height="1.427958984375" />
+        </Diagram></edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

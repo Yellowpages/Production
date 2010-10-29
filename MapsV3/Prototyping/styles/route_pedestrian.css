@@ -1,0 +1,55 @@
+﻿/* Tab Pedestrian Option Items ****************************/
+#ctl00_mainArea_ContSearchOpts_tabPedestrian
+{
+	border:solid 0px green; 
+	width:360px; 
+	margin-left:0px;
+	margin-top: 10px;
+	/*overflow: hidden;*/
+}
+
+#ctl00_mainArea_ContSearchOpts_tabPedestrian_pnlOptsPedestrian span 
+{
+	font-weight:bold;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabPedestrian_pnlOptsPedestrian .pedestrian-line1 div
+{
+	float:left;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabPedestrian_pnlOptsPedestrian .pedestrian-line1 
+{
+	font-weight:normal;
+	padding-top:2px;
+	margin-left:5px;
+	height: 24px;
+	width:328px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabPedestrian_pnlOptsPedestrian .pedestrian-line1 span 
+{
+	font-weight:normal;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabPedestrian_pnlOptsPedestrian .pedestrian-line1 .line1-part1
+{
+	padding-top:2px;
+	padding-right:6px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabPedestrian_pnlOptsPedestrian .pedestrian-line1 .line1-part1,
+#ctl00_mainArea_ContSearchOpts_tabPedestrian_pnlOptsPedestrian .pedestrian-line1 .line1-part3,
+#ctl00_mainArea_ContSearchOpts_tabPedestrian_pnlOptsPedestrian .pedestrian-line1 .line1-part5
+{
+	padding-top:2px;
+	padding-right:3px;
+}
+
+#ctl00_mainArea_ContSearchOpts_tabPedestrian .option-submit 
+{
+	border-top: solid 1px #cccccc;
+	margin-top:5px;
+	padding:10px 10px 0px 260px;
+}
+/* Tab Pedestrian Option Items ****************************/

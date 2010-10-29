@@ -1,0 +1,42 @@
+﻿body 
+{
+}
+#MainMap
+{
+	position:absolute;
+	overflow:hidden;
+	left:250px;
+	top:100px;
+	/*
+	width:500px;
+	height:1000px;
+*/
+	right:10px;
+	bottom:10px;
+	border: 1px solid black;
+}
+
+
+
+#debug
+{
+		position:absolute;
+	left:10px;
+	top:30px;
+	width:200px;
+	height:200px;
+	border: 1px solid black;
+	display:block;
+}
+
+#Results
+{
+		position:absolute;
+	left:10px;
+	top:240px;
+	width:200px;
+	height:200px;
+	border: 1px solid black;
+	display:block;
+	
+}
